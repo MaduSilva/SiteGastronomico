@@ -3,84 +3,139 @@
     --preto: #000000;
     --branco: #FFFFFF;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-footer{
+
+.containerchefs{
+    background-color: var(--areia);
+    width: 80%;
+    height: 180px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.chefsrenomeados img{
+    width: 100px;
+    height: 100px;
+    margin-left: 7px;
+}
+
+
+
+.Loguinho{
+    width: 20px;
+    height: 25px;
+    margin-left: 305px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.titulochefs h3{
+    margin-left: 25px;
+    font-weight: lighter;
+}
+
+.nomes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nomes div{
+    text-align: center;
+}
+
+
+footer {
     width: 100%;
     height: 170px;
     background-color: var(--areia);
 }
-footer .baixo{
+
+footer .baixo {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-footer .imagem-baixo{
+
+footer .imagem-baixo {
     object-fit: cover;
 }
-footer ul{
+
+footer ul {
     margin-top: 25px;
 }
-footer ul li{
+
+footer ul li {
     list-style-type: none;
     font-size: 10px;
 }
-footer ul .fale_conosco{
+
+footer ul .fale_conosco {
     margin-top: 20px;
 }
-footer li a{
+
+footer li a {
     text-decoration: none;
     color: var(--preto);
 }
-footer .social-media{
+
+footer .social-media {
     display: flex;
     width: 105px;
     height: 80%;
     justify-content: space-between;
     align-items: flex-end;
 }
-footer .social-media i{
+
+footer .social-media i {
     font-size: 20px;
     color: var(--preto);
 }
-@media(min-width: 800px){
-    footer .social-media{
+
+@media(min-width: 800px) {
+    footer .social-media {
         width: 150px;
     }
-    footer .social-media i{
+    footer .social-media i {
         font-size: 30px;
     }
-    footer ul{
+    footer ul {
         margin-top: 5px;
     }
-    footer ul li{
+    footer ul li {
         font-size: 15px;
     }
-    footer .imagem-baixo img{
+    footer .imagem-baixo img {
         width: 180px;
         object-fit: cover;
     }
-
 }
-@media(min-width: 1200px){
-    footer .social-media{
+
+@media(min-width: 1200px) {
+    footer .social-media {
         width: 155px;
     }
-    footer .social-media i{
+    footer .social-media i {
         font-size: 35px;
     }
-    footer ul{
+    footer ul {
         margin-top: 5px;
     }
-    footer ul li{
+    footer ul li {
         font-size: 15px;
     }
-    footer .imagem-baixo img{
+    footer .imagem-baixo img {
         width: 200px;
         object-fit: cover;
     }
