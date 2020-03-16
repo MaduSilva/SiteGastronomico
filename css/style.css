@@ -1,8 +1,21 @@
+:root {
+    --areia: #EFB263;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .containerchefs{
-    
+    margin-left: 50px;
+    width: 80%;
+    height: 200px;
+    background-color: var(--areia);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
 }
