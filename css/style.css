@@ -120,6 +120,18 @@ footer .social-media i {
         width: 180px;
         object-fit: cover;
     }
+
+    .containerchefs{
+        width: 50%;
+        height: 200px;
+        margin-left: 200px;
+    }
+
+    .chefsrenomeados img{
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
 }
 
 @media(min-width: 1200px) {
@@ -139,4 +151,16 @@ footer .social-media i {
         width: 200px;
         object-fit: cover;
     }
+
+    .containerchefs{
+        width: 70%;
+        height: 400px;
+        margin-left: 200px;
+    }
+
+    .chefsrenomeados img{
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
 }
