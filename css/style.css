@@ -153,6 +153,9 @@ footer .baixo {
 footer .imagem-baixo {
     object-fit: cover;
 }
+.tablet-restaurante{
+    display: none;
+}
 footer ul {
     margin-top: 25px;
 }
@@ -183,6 +186,148 @@ footer .social-media i {
     color: var(--preto);
 }
 @media(min-width: 800px) {
+    .mobile-restaurante{
+        display: none;
+    }
+    .ajustar-imagem img{
+        width: 280px;
+        height: 200px;
+    }
+    
+    .tablet-restaurante{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    section .restaurantes-tablet{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px 0px 50px 0px;
+    }
+    .texto-restaurante h2, h3, h4,
+    .texto-restaurante2 h2, h3, h4,
+    .texto-restaurante3 h2, h3, h4,
+    .texto-restaurante4 h2, h3, h4,
+    .texto-restaurante5 h2, h3, h4,
+    .texto-restaurante6 h2, h3, h4{
+        margin-left: 13px;
+    }
+    .texto-restaurante h2,
+    .texto-restaurante2 h2,
+    .texto-restaurante3 h2,
+    .texto-restaurante4 h2,
+    .texto-restaurante5 h2,
+    .texto-restaurante6 h2{
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .texto-restaurante h3, h4,
+    .texto-restaurante2 h3, h4,
+    .texto-restaurante3 h3, h4,
+    .texto-restaurante4 h3, h4,
+    .texto-restaurante5 h3, h4,
+    .texto-restaurante6 h3, h4{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .texto-restaurante h4,
+    .texto-restaurante2 h4,
+    .texto-restaurante3 h4,
+    .texto-restaurante4 h4,
+    .texto-restaurante5 h4,
+    .texto-restaurante6 h4{
+        text-align: right;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+    .texto-restaurante {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 278px;
+        left: 94px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante2 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 278px;
+        left: 440px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante3 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 532px;
+        left: 94px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante4 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 533px;
+        left: 440px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante5 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 787px;
+        left: 94px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante6 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 787px;
+        left: 440px;
+        border-radius: 12px;
+        border-color: gray;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .filtro{
+        margin: 15px 0px 30px 90px;
+    }
     footer .social-media {
         width: 150px;
     }
@@ -202,6 +347,218 @@ footer .social-media i {
 }
 
 @media(min-width: 1366px) {
+    .ajustar-imagem img{
+        height: 250px;
+        width: 350px;
+    }
+    .tablet-restaurante{
+        display: none;
+    }
+    section .restaurantes-tablet{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        margin: 100px 0px 50px 0px;
+    }
+    .restaurantes-tablet article{
+        margin-left: 60px;
+    }
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        justify-content: center;
+        align-items: center;
+        margin: 105px 63px;
+        width: 380px;
+        border-radius: 15px;
+        padding: 40px 0px 50px 0px;
+    }
+    .categorias h1{
+        margin-bottom: 20px;
+        margin-right: 193px;
+    }
+    .comidas1 h2, h3,
+    .comidas2 h2, h3,
+    .comidas3 h2, h3,
+    .comidas4 h2, h3,
+    .comidas5 h2, h3,
+    .comidas6 h2, h3,
+    .comidas7 h2, h3{
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        text-shadow: 0.5px 0.5px 20px black;     
+    }
+
+    .comidas1 h2 {
+        left: 980px;
+        top: 314px;
+    }
+    .comidas1 h3 {
+        left: 1134px;
+        top: 314px;
+    }
+
+
+    .comidas2 h2 {
+        left: 980px;
+        top: 500px;
+    }
+    .comidas2 h3 {
+        left: 1131px;
+        top: 501px;
+    }
+
+
+    .comidas3 h2 {
+        left: 980px;
+        top: 400px;
+    }
+    .comidas3 h3 {
+        left: 1130px;
+        top: 408px;
+    }
+
+
+    .comidas4 h2 {
+        left: 1145px;
+        top: 601px;
+    }
+    .comidas4 h3 {
+        left: 973px;
+        top: 602px;
+    }
+
+
+
+    .comidas5 h2 {
+        left: 1146px;
+        top: 695px;
+    }
+    .comidas5 h3 {
+        left: 972px;
+        top: 697px;
+    }
+    .comidas6 h2 {
+        left: 980px;
+        top: 792px;
+    }
+    .comidas6 h3 {
+        left: 1132px;
+        top: 790px;
+    }
+    .comidas7 h2 {
+        left: 1145px;
+        top: 888px;
+    }
+    .comidas7 h3 {
+        left: 969px;
+        top: 888px;
+    }
+    #texto_aparece1{
+        display: none;
+    }
+    #texto_aparece2{
+        display: none;
+    }
+    #texto_aparece3{
+        display: none;
+    }
+    #texto_aparece4{
+        display: none;
+    }
+    #texto_aparece5{
+        display: none;
+    }
+    #texto_aparece6{
+        display: none;
+    }
+    .texto-restaurante {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 328px;
+        left: 103px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante2 {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 327px;
+        left: 513px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante3 {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 682px;
+        left: 103px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante4 {
+        width: 333px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 682px;
+        left: 512px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante5 {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 1036px;
+        left: 103px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .texto-restaurante6 {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 1036px;
+        left: 513px;
+        border-radius: 12px;
+        border-color: gray;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .web-restaurante{
+        display: flex;
+        margin: 0 auto;
+        width: 1366px;
+    }
     footer {
         height: 230px;
     }
@@ -223,3 +580,11 @@ footer .social-media i {
     }
 }
 
+@media(min-width: 1380px) {
+    .comidas1 img{
+        position: relative;
+    }
+    .comidas1 h2, h3{
+        z-index: 99;
+    }
+}
