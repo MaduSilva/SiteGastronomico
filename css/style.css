@@ -215,6 +215,7 @@ footer .social-media i {
     font-size: 20px;
     color: var(--preto);
 }
+/* inicio página cadastro de usuário */
 .banner_cadastro_usuario{
     width: 100%;
     height: 100px;
@@ -259,7 +260,7 @@ footer .social-media i {
 
 .formularios_usuarios h2{
     text-transform: uppercase;
-    margin-left: 60px;
+    margin-left: 100px;
     margin-top: 15px;
 }
 .formulario_bancários_usuários{
@@ -273,7 +274,13 @@ footer .social-media i {
     border-bottom: solid 1px black;
 }
 
-
+.usuario_cadastre{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid 1px black;
+    max-width: 50%;
+}
+/* fim páfina cadastro de usuário */
 /*Página de cadastro de parceiros*/
 
 .containerparceiros {
@@ -347,6 +354,26 @@ footer .social-media i {
         margin-left: 260px;
     }
     /*fim página cadastro de parceiros*/
+
+    /* Inicio página cadastro de usuário */
+    .banner_cadastro_usuario{
+        height: 140px;
+        background-repeat: no-repeat;
+    }
+    .banner_cadastro_usuario h1{
+        font-size: 2.5em;
+    }
+    .formularios_usuarios{
+        font-size: 1.5em;
+    }
+    h2{
+        margin-left:80px ;
+    }
+    .seila_usuario{
+        font-size: 2em;
+        margin-left: 100px;
+    }
+    /* Fim cadastro usuário */
 }
 
 @media(min-width: 1366px) {
