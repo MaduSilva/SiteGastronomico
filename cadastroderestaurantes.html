@@ -3,63 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastroderestaurante.css">
     <title>Gastrô</title>
 </head>
 
-<header>
-
-</header>
-
 <body>
-    <div class="container">
+
+    <header class="container">
+        <a href="#" class="btn circle" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
+        <a href="index.html" title="acessar a home">
+            <div class="logo">
+                <img src="img/logo-moblie.png" alt="Logo do Gastro">
+            </div>
+        </a>
+        <a class="pesquisa" href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
+            <i class="fas fa-search"></i>
+        </a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" title="Acessar página inicial">início</a></li>
+                <li><a href="restaurantes.html" title="Acessar sessão restaurantes">sobre</a></li>
+                <li><a href="chef_a_domicilio.html" title=" Acessar sessão chef à domicílio">chef à domicílio</a></li>
+                <li><a href="sobre.html" title="Acessar sessão sobre página">sobre</a></li>
+                <li><a href="fale_conosco" title="Acessar sessão fale conosco">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
+    </header>
+
+
+    <div class="containerparceiros">
 
         <h1>Cadastro de Parceiro</h1>
         <form action="" method="post" enctype="multipart/form-data">
 
-            <section class="botao"> 
-            <button class="botao">
-                <a href="">Chefs</a>
-            </button>
+            <section class="botao">
+                <button class="botao">
+                    <a href="">Chefs</a>
+                </button>
 
-            <button class="botao">
-                <a href="CadastroDeRestaurantes.html">Restaurantes</a>
-            </button>
+                <button class="botao">
+                    <a href="CadastroDeRestaurantes.html">Restaurantes</a>
+                </button>
             </section>
 
-            <div>
-                <label for="">Nome do Estabelecimento:</label>
-                <input name="nome" required="required" placeholder="Digite o nome do restaurante" type="text">
-            </div>
+            <div class="camposdetexto">
+                <div>
+                    <label for="">Nome do Estabelecimento:</label>
+                    <input name="nome" required="required" placeholder="Digite o nome do restaurante" type="text">
+                </div>
 
-            <div>
-                <label for="">Endereço:</label>
-                <input name="endereco" required="required" placeholder="Digite o endereço do restaurante" type="text">
-            </div>
+                <div>
+                    <label for="">Endereço:</label>
+                    <input name="endereco" required="required" placeholder="Digite o endereço do restaurante"
+                        type="text">
+                </div>
 
-            <div>
-                <label for="">Tipo de Cozinha:</label>
-                <input name="cozinha" required="required" placeholder="Digite o tipo de cozinha" type="text">
-            </div>
+                <div>
+                    <label for="">Tipo de Cozinha:</label>
+                    <input name="cozinha" required="required" placeholder="Digite o tipo de cozinha" type="text">
+                </div>
 
-            <div>
-                <label for="">Rede Social:</label>
-                <input name="rede" required="required" placeholder="Digite a rede social do restaurante" type="text">
-            </div>
+                <div>
+                    <label for="">Rede Social:</label>
+                    <input name="rede" required="required" placeholder="Digite a rede social do restaurante"
+                        type="text">
+                </div>
 
-            <div>
-                <label for="">Foto do Estabelecimento:</label>
-                <input required="required" name="foto" type="file">
+                <div>
+                    <label for="">Foto do Estabelecimento:</label>
+                    <input required="required" name="foto" type="file">
+                </div>
             </div>
-
             <div>
                 <label for="termos">
                     <input name="termosdeuso" id="termos" type="checkbox">
                     Li e aceito os termos de uso do site</label>
             </div>
 
-            <div>
+            <div class="enviar">
                 <button name="enviar" value="1" type="submit">Cadastrar</button>
             </div>
 
@@ -67,10 +91,44 @@
         </form>
 
     </div>
-</body>
-<footer>
 
-    
-</footer>
+    <footer>
+        <div class="baixo">
+            <div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="cadastroderestaurantes.html">Trabalhe Conosco</a></li>
+                    <div class="fale_conosco">
+                        <li>Fale Conosco:</li>
+                        <li>(11)9999-9999</li>
+                        <li>contato@nome.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="imagem-baixo">
+                <img src="img/logo-moblie.png" alt="Logo do site.">
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function btnMenu() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
 
 </html>
