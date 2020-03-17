@@ -2,6 +2,8 @@
     --areia: #EFB263;
     --preto: #000000;
     --branco: #FFFFFF;
+    --light: #ffffff;
+    --shadow: #c7d2db;
 }
 
 * {
@@ -9,47 +11,49 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-color: #FFFFFF;
-    
+    overflow-x: hidden;
+    /*tirar parte branca lateral do mobile*/
 }
-a{
+
+a {
     color: #000000;
     text-decoration: none;
     font-size: 1.4em;
 }
-img{
-    width: 100%;
-}
-.btn{
+
+.btn {
     padding-left: 45px;
 }
-.circle{
+
+.circle {
     border-radius: 50%;
 }
-.rounded{
+
+.rounded {
     border-radius: 0.7em;
 }
-shadow{
-    box-shadow: 6px 6px 10px black , -6px -6px 10px white;
-}
 
-.container{
+.container {
     width: 100%;
     margin: 0 auto;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 80px;
     background-color: var(--areia);
 }
-header img{
+
+header img {
     margin-top: 20px;
-    
 }
-#menu{
+
+#menu {
     background-color: white;
     position: absolute;
     top: 80px;
@@ -57,12 +61,14 @@ header img{
     padding: 2em 3em;
     display: none;
 }
-#menu li, #menu a{
+
+#menu li, #menu a {
     list-style: none;
     padding: 17px 12em 2px 0;
     width: 100%;
 }
-.icone_perfil{
+
+.icone_perfil {
     height: 100px;
     width: 100px;
 }
@@ -128,18 +134,15 @@ header img{
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 20px;
-    
 }
 
-.chefsrenomeados img{
+.chefsrenomeados img {
     width: 100px;
     height: 100px;
     margin-left: 7px;
 }
 
-
-
-.Loguinho{
+.Loguinho {
     width: 20px;
     height: 25px;
     margin-left: 305px;
@@ -148,25 +151,72 @@ header img{
     align-items: center;
 }
 
-
-.titulochefs h3{
+.titulochefs h3 {
     margin-left: 25px;
     font-weight: lighter;
 }
 
-.nomes{
+.nomes {
     display: flex;
     justify-content: space-around;
 }
 
-.nomes div{
+.nomes div {
     text-align: center;
 }
 
+.container-restaurante {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container-restaurante section {
+    margin-bottom: 35px;
+}
+
+.container-restaurante article {
+    border-radius: 10px;
+    color: gray;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    border-radius: 18px;
+    padding: 10px 25px;
+    margin: 15px 0px 15px 25px;
+}
+
+.filtro p {
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.container-restaurante section article {
+    display: flex;
+}
+
+.shadow {
+    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
+}
+
+.ajustar-imagem img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.ajustar-imagem p {
+    padding: 25px 0px 0px 10px;
+    font-weight: 700;
+    color: gray;
+}
 
 footer {
     width: 100%;
-    height: 170px;
+    height: 190px;
     background-color: var(--areia);
 }
 
@@ -191,8 +241,13 @@ footer ul li {
     font-size: 10px;
 }
 
+footer ul li a {
+    font-size: 10px;
+}
+
 footer ul .fale_conosco {
     margin-top: 20px;
+    font-size: 10px;
 }
 
 footer li a {
@@ -213,6 +268,42 @@ footer .social-media i {
     color: var(--preto);
 }
 
+/*Página de cadastro de parceiros*/
+
+.containerparceiros {
+    margin-top: 80px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+
+.containerparceiros h1 {
+    font-weight: lighter;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerparceiros form {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5em;
+    /*serve pra espaçar as linhas*/
+}
+
+.camposdetexto input[type="text"] {
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+/*fim página cadastro*/
+
 @media(min-width: 800px) {
     footer .social-media {
         width: 150px;
@@ -223,30 +314,72 @@ footer .social-media i {
     footer ul {
         margin-top: 5px;
     }
-    footer ul li {
+    footer ul li, footer ul li a {
         font-size: 15px;
     }
     footer .imagem-baixo img {
         width: 180px;
         object-fit: cover;
     }
+    /*nav*/
+    
+    .pesquisa {
+        margin-left: 400px;
+    }
+    .containerchefs {
+        width: 50%;
+        height: 200px;
+        margin-left: 200px;
+    }
+    .chefsrenomeados img {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    /*fim nav*/
+    /*página cadastro de parceiro*/
+    .containerparceiros {
+        margin-left: 260px;
+    }
+    /*fim página cadastro de parceiros*/
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1366px) {
+
+    /*footer*/
     footer .social-media {
-        width: 155px;
+        width: 175px;
     }
     footer .social-media i {
-        font-size: 35px;
+        font-size: 38px;
     }
     footer ul {
         margin-top: 5px;
     }
-    footer ul li {
-        font-size: 15px;
+    footer ul li, footer ul li a {
+        font-size: 20px;
     }
     footer .imagem-baixo img {
         width: 200px;
         object-fit: cover;
     }
+    /*fim footer*/
+    /*home sessão chefs*/
+    .containerchefs {
+        width: 70%;
+        height: 400px;
+        margin-left: 200px;
+    }
+    .chefsrenomeados img {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    /*fim home sessão chefs*/
+    /*página cadastro de parceiro*/
+    .containerparceiros {
+        margin-left: 600px;
+    }
+
 }
