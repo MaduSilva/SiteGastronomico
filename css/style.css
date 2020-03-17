@@ -134,7 +134,7 @@ footer .social-media i {
     
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1366px) {
     footer .social-media {
         width: 155px;
     }
@@ -159,6 +159,10 @@ footer .social-media i {
     }
 
     .chefsrenomeados img{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: ;
         margin-top: 10px;
         margin-left: 25px;
     }
