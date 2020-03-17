@@ -215,6 +215,64 @@ footer .social-media i {
     font-size: 20px;
     color: var(--preto);
 }
+.banner_cadastro_usuario{
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/NoPath_-_Copia.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+}
+.banner_cadastro_usuario h1{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.form_cadastro_usuario input[type="text"]{
+    width: 100%;
+    border-radius: initial;
+    border:none;
+    border-bottom: solid 1px black;
+
+}
+
+.telefone_celular{
+    display: flex;
+    justify-content: space-between;
+}
+
+.telefone_celular input{
+    width: 90% !important;
+    margin: 0 auto;
+}
+.sexo_cpf{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sexo_cpf input{
+    width: 90% !important;
+    margin: 0auto;
+}
+
+.formularios_usuarios h2{
+    text-transform: uppercase;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.formulario_bancários_usuários{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.formulario_bancários_usuários input[type="text"]{
+    width: 100%;
+    border-radius: initial;
+    border:none;
+    border-bottom: solid 1px black;
+}
+
 
 /*Página de cadastro de parceiros*/
 
