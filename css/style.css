@@ -73,6 +73,7 @@ header img {
     width: 100px;
 }
 
+/*sessão chefs home*/
 .containerchefs {
     background-color: var(--areia);
     width: 80%;
@@ -111,7 +112,7 @@ header img {
 .nomes div {
     text-align: center;
 }
-
+/*fim sessão chefs home*/
 .container-restaurante {
     width: 95%;
     margin: 0 auto;
@@ -313,20 +314,44 @@ footer .social-media i {
     /*home sessão chefs*/
     .containerchefs {
         width: 70%;
-        height: 400px;
+        height: 350px;
         margin-left: 200px;
     }
     .chefsrenomeados img {
         width: 200px;
         height: 200px;
-        display: flex;
+      
         margin-top: 10px;
-        margin-left: 25px;
+        margin-left: 90px;
     }
+
+    .titulochefs h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .Loguinho {
+        margin-left: 750px;
+        margin-top: -40px;
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 45px;
+    }
+
+    .nomes{
+        font-size: 20px;
+    }
+
+    .nomes div{
+        font-size: 20px;
+        text-align: center;
+    }
+
     /*fim home sessão chefs*/
     /*página cadastro de parceiro*/
     .containerparceiros {
-        margin-left: 600px;
+        margin-left: 560px;
     }
-
+    /*fim página cadastro de parceiros*/
 }
