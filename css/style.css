@@ -5,44 +5,55 @@
     --light: #ffffff;
     --shadow: #c7d2db;
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-color: #FFFFFF;
+    overflow-x: hidden;
+    /*tirar parte branca lateral do mobile*/
 }
-a{
+
+a {
     color: #000000;
     text-decoration: none;
     font-size: 1.4em;
 }
-.btn{
+
+.btn {
     padding-left: 45px;
 }
-.circle{
+
+.circle {
     border-radius: 50%;
 }
-.rounded{
+
+.rounded {
     border-radius: 0.7em;
 }
-.container{
+
+.container {
     width: 100%;
     margin: 0 auto;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 80px;
     background-color: var(--areia);
 }
-header img{
+
+header img {
     margin-top: 20px;
-    
 }
-#menu{
+
+#menu {
     background-color: white;
     position: absolute;
     top: 80px;
@@ -50,15 +61,75 @@ header img{
     padding: 2em 3em;
     display: none;
 }
-#menu li, #menu a{
+
+#menu li, #menu a {
     list-style: none;
     padding: 17px 12em 2px 0;
     width: 100%;
 }
-.icone_perfil{
+
+.icone_perfil {
     height: 100px;
     width: 100px;
 }
+
+/* Começo sessão sobre-home */
+.containersobre{
+    background-color: var(--areia);
+    width: 80%;
+    height: 155px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.cardsobre h2{
+    padding: 5px 25px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.contentsobre img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.contentsobre{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: flex-start;
+}
+
+.textosobre{
+    padding: 0 10px;
+
+}
+
+.textosobre p{
+    font-size: 15px;
+    text-align: start;
+}
+
+.textosobre button{
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 1px;
+}
+
+.cardsobre strong p{
+    display: none;
+}
+
+/* fim sessão sobre-home */
+
+
+
+
+
 .containerchefs{
     background-color: var(--areia);
     width: 80%;
@@ -67,14 +138,15 @@ header img{
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 20px;
-    
 }
-.chefsrenomeados img{
+
+.chefsrenomeados img {
     width: 100px;
     height: 100px;
     margin-left: 7px;
 }
-.Loguinho{
+
+.Loguinho {
     width: 20px;
     height: 25px;
     margin-left: 305px;
@@ -83,33 +155,35 @@ header img{
     align-items: center;
 }
 
-
-.titulochefs h3{
+.titulochefs h3 {
     margin-left: 25px;
     font-weight: lighter;
 }
 
-.nomes{
+.nomes {
     display: flex;
     justify-content: space-around;
 }
 
-.nomes div{
+.nomes div {
     text-align: center;
 }
-
-.container-restaurante{
+/*fim sessão chefs home*/
+.container-restaurante {
     width: 95%;
     margin: 0 auto;
 }
-.container-restaurante section{
+
+.container-restaurante section {
     margin-bottom: 35px;
 }
-.container-restaurante article{
+
+.container-restaurante article {
     border-radius: 10px;
     color: gray;
 }
-.filtro{
+
+.filtro {
     display: flex;
     justify-content: space-around;
     width: 100px;
@@ -117,32 +191,39 @@ header img{
     padding: 10px 25px;
     margin: 15px 0px 15px 25px;
 }
-.filtro p{
+
+.filtro p {
     font-size: 25px;
     font-weight: 300;
     padding-right: 20px;
 }
-.container-restaurante section article{
+
+.container-restaurante section article {
     display: flex;
 }
+
 .shadow {
-    box-shadow:-2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
+    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
 }
-.ajustar-imagem img{
+
+.ajustar-imagem img {
     width: 200px;
     height: 150px;
     border-radius: 20px;
 }
-.ajustar-imagem p{
+
+.ajustar-imagem p {
     padding: 25px 0px 0px 10px;
     font-weight: 700;
     color: gray;
 }
+
 footer {
     width: 100%;
-    height: 170px;
+    height: 190px;
     background-color: var(--areia);
 }
+
 footer .baixo {
     width: 100%;
     height: 100%;
@@ -150,6 +231,7 @@ footer .baixo {
     justify-content: space-around;
     align-items: center;
 }
+
 footer .imagem-baixo {
     object-fit: cover;
 }
@@ -159,21 +241,26 @@ footer .imagem-baixo {
 footer ul {
     margin-top: 25px;
 }
-footer ul li{
+
+footer ul li {
     list-style-type: none;
     font-size: 10px;
 }
-footer ul li a{
+
+footer ul li a {
     font-size: 10px;
 }
+
 footer ul .fale_conosco {
     margin-top: 20px;
     font-size: 10px;
 }
+
 footer li a {
     text-decoration: none;
     color: var(--preto);
 }
+
 footer .social-media {
     display: flex;
     width: 105px;
@@ -181,10 +268,216 @@ footer .social-media {
     justify-content: space-between;
     align-items: flex-end;
 }
+
 footer .social-media i {
     font-size: 20px;
     color: var(--preto);
 }
+/* inicio página cadastro de usuário */
+.banner_cadastro_usuario{
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/NoPath_-_Copia.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+}
+.banner_cadastro_usuario h1{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.form_cadastro_usuario input[type="text"]{
+    width: 100%;
+    border-radius: initial;
+    border:none;
+    border-bottom: solid 1px black;
+
+}
+
+.telefone_celular{
+    display: flex;
+    justify-content: space-between;
+}
+
+.telefone_celular input{
+    width: 90% !important;
+    margin: 0 auto;
+}
+.sexo_cpf{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sexo_cpf input{
+    width: 90% !important;
+    margin: 0auto;
+}
+
+.formularios_usuarios h2{
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.formulario_bancários_usuários{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.formulario_bancários_usuários input[type="text"]{
+    width: 100%;
+    border-radius: initial;
+    border:none;
+    border-bottom: solid 1px black;
+}
+
+.usuario_cadastre{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid 1px black;
+    max-width: 50%;
+}
+/* fim páfina cadastro de usuário */
+/*Página de cadastro de parceiros*/
+
+.containerparceiros {
+    margin-top: 80px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+
+.containerparceiros h1 {
+    font-weight: lighter;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerparceiros form {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5em;
+    /*serve pra espaçar as linhas*/
+}
+
+.camposdetexto input[type="text"] {
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+/*fim página cadastro*/
+
+/*Início página sobre chefs*/
+
+div.sobre{
+    display: flex;
+    background-color: #DADADA;
+    height: 120px;
+    width: 100%;
+    
+}
+
+.sobre h1{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 170px;
+    margin-top: 15px;
+    font-weight: normal;
+    color: rgb(73, 48, 48);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sobre img{
+    opacity: 0.2;
+    width: 100%;
+    object-fit: cover;
+}
+
+.informacoes{
+    display: flex;
+    box-sizing: border-box;
+    height: 500px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-radius: 30px;
+    border-style: groove;
+}
+
+.informacoes p{
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.informacoes h1{
+    font-size: 30px;
+}
+
+.texto_sobre{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+    text-align: start;
+    color: black
+}
+
+.criadores h1{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 39px 0;
+    color: #737373;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.criador_1{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 207px;
+    width: 85%;
+    margin-left: 36px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 50px;
+}
+.criador_1 img{
+    display: flex;
+    border-radius: 50em;
+    height: 138px;
+    margin-top: 28px;
+    margin-left: 23px;
+}
+
+.criador_1 h3{
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 11px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.criador_1 p{
+    margin-top: 111px;
+    margin-left: -130px;
+    font-size: 7.5px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
 @media(min-width: 800px) {
     .mobile-restaurante{
         display: none;
@@ -344,7 +637,102 @@ footer .social-media i {
         width: 180px;
         object-fit: cover;
     }
+    /*nav*/
+    
+    .pesquisa {
+        margin-left: 400px;
+    }
+    .containerchefs {
+        width: 50%;
+        height: 200px;
+        margin-left: 200px;
+    }
+    .chefsrenomeados img {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    /*fim nav*/
+    /*página cadastro de parceiro*/
+    .containerparceiros {
+        margin-left: 260px;
+    }
+    /*fim página cadastro de parceiros*/
+
+    /* começo sobre-home */
+    .containersobre{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cardsobre h2{
+        font-size: 20px;
+    }
+
+    .contentsobre p{
+        font-size: 19px;
+        font-weight: lighter;
+    }
+
+    .contentsobre img{
+        width: 150px;
+        height: 100px;
+        margin-left: 32px;
+        border-radius: 10px;
+    }
+
+    .textosobre button{
+        font-size: 15px;
+        padding: 3px;
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+    .cardsobre strong p{
+        display: none;
+    }
+    /* fim sobre-home */
+    /* Inicio página cadastro de usuário */
+    .banner_cadastro_usuario{
+        height: 140px;
+        background-repeat: no-repeat;
+    }
+    .banner_cadastro_usuario h1{
+        font-size: 2.5em;
+    }
+    .formularios_usuarios{
+        font-size: 1.5em;
+    }
+    h2{
+        margin-left:80px ;
+    }
+    .seila_usuario{
+        font-size: 2em;
+        margin-left: 100px;
+    }
+    /* Fim cadastro usuário */
+    /*Sobre o site*/
+    .sobre h1{
+        margin-left: 370px;
+    }
+
+    .informacoes{
+        margin-left: 50px;
+    }
+
+    .informacoes p{
+        font-size: 19px;
+        text-align: center;
+        margin-left: 70px;
+    }
+
 }
+
+
+
+
+
+
+
 
 @media(min-width: 1366px) {
     .ajustar-imagem img{
@@ -578,13 +966,25 @@ footer .social-media i {
         width: 200px;
         object-fit: cover;
     }
-}
+    /*fim footer*/
+    /*home sessão chefs*/
+    .containerchefs {
+        width: 70%;
+        height: 350px;
+        margin-left: 200px;
+    }
+    .chefsrenomeados img {
+        width: 200px;
+        height: 200px;
+      
+        margin-top: 10px;
+        margin-left: 90px;
+    }
 
-@media(min-width: 1380px) {
-    .comidas1 img{
-        position: relative;
+    .titulochefs h3{
+        font-size: 30px;
+        text-align: center;
     }
-    .comidas1 h2, h3{
-        z-index: 99;
-    }
+}
+@media (min-width: 1380px){
 }

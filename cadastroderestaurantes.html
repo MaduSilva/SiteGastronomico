@@ -14,9 +14,11 @@
     <header class="container">
         <a href="#" class="btn circle" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
         <a href="index.html" title="acessar a home">
-            <img src="img/logo-moblie.png" alt="Logo do Gastro">
+            <div class="logo">
+                <img src="img/logo-moblie.png" alt="Logo do Gastro">
+            </div>
         </a>
-        <a href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
+        <a class="pesquisa" href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
             <i class="fas fa-search"></i>
         </a>
         <nav id="menu">
@@ -25,69 +27,70 @@
                 <li><a href="restaurantes.html" title="Acessar sessão restaurantes">sobre</a></li>
                 <li><a href="chef_a_domicilio.html" title=" Acessar sessão chef à domicílio">chef à domicílio</a></li>
                 <li><a href="sobre.html" title="Acessar sessão sobre página">sobre</a></li>
-                <li><a href="fale_conosco" title="Acessar sessão fale conosco">fale-conosoco</a></li>
+                <li><a href="fale_conosco" title="Acessar sessão fale conosco">Fale Conosco</a></li>
             </ul>
         </nav>
         <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
-            </ul>
-        </nav>
-     
     </header>
 
-    <!-- começo sessão sobre-home -->
-    <div class="containersobre">
-        <div class="cardsobre">
-            <h2>Como funciona o Chefs à domicilio</h2>
-            <div class="contentsobre">
-                <img src="img/chef-sobre.jpg" alt="Cozinheiro preparando a comida">
-                <div class="textosobre">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae quae laborum eligendi
-                        vitae placeat.</p>
-                    <strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequuntur, ullam fuga odio, voluptatem inventore quas blanditiis quo, cupiditate voluptates assumenda ipsam! Cum amet id at dolores facilis ratione delectus.</p>
-                    </strong>
-                    <button type="submit">Sem pique pra cozinhar, clique aqui</button>
+
+    <div class="containerparceiros">
+
+        <h1>Cadastro de Parceiro</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <section class="botao">
+                <button class="botao">
+                    <a href="">Chefs</a>
+                </button>
+
+                <button class="botao">
+                    <a href="CadastroDeRestaurantes.html">Restaurantes</a>
+                </button>
+            </section>
+
+            <div class="camposdetexto">
+                <div>
+                    <label for="">Nome do Estabelecimento:</label>
+                    <input name="nome" required="required" placeholder="Digite o nome do restaurante" type="text">
+                </div>
+
+                <div>
+                    <label for="">Endereço:</label>
+                    <input name="endereco" required="required" placeholder="Digite o endereço do restaurante"
+                        type="text">
+                </div>
+
+                <div>
+                    <label for="">Tipo de Cozinha:</label>
+                    <input name="cozinha" required="required" placeholder="Digite o tipo de cozinha" type="text">
+                </div>
+
+                <div>
+                    <label for="">Rede Social:</label>
+                    <input name="rede" required="required" placeholder="Digite a rede social do restaurante"
+                        type="text">
+                </div>
+
+                <div>
+                    <label for="">Foto do Estabelecimento:</label>
+                    <input required="required" name="foto" type="file">
                 </div>
             </div>
-        </div>
-        <!--fim cardsobre-->
+            <div>
+                <label for="termos">
+                    <input name="termosdeuso" id="termos" type="checkbox">
+                    Li e aceito os termos de uso do site</label>
+            </div>
+
+            <div class="enviar">
+                <button name="enviar" value="1" type="submit">Cadastrar</button>
+            </div>
+
+
+        </form>
+
     </div>
-    <!--fim containersobre-->
-
-    <!--fim-->
-
-
-
-
-
-
-    <div class="containerchefs">
-        <div class="titulochefs">
-            <h3> Chefs Mais Conceituados no Gastrô </h3> <img class="Loguinho" src="img/loguinho.png"
-                alt="Logo do Gastrô">
-        </div>
-        <div class="chefsrenomeados">
-            <img class="jacquin" src="img/erick-jacquin-2017-21085.jpg" alt="Chef Jacquin">
-            <img class="fogaça" src="img/fogaça.jpg" alt="Chef Fogaça">
-            <img class="paola" src="img/paola.jpg" alt="Chef Paola">
-        </div>
-        <div class="nomes">
-            <div>
-                <h4> Jacquin </h4>
-                <p class="nota"> Nota 5.0</p>
-            </div>
-            <div>
-                <h4> Fogazza </h4>
-                <p class="nota"> Nota 5.0</p>
-            </div>
-            <div>
-                <h4> Paola </h4>
-                <p class="nota"> Nota 5.0</p>
-            </div>
-
-        </div>
-    </div>
-
 
     <footer>
         <div class="baixo">
@@ -126,7 +129,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
