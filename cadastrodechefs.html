@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastrô</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <a href="#" class="btn circle" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
+        <a href="index.html" title="acessar a home">
+            <div class="logo">
+                <img src="img/logo-moblie.png" alt="Logo do Gastro">
+            </div>
+        </a>
+        <a class="pesquisa" href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
+            <i class="fas fa-search"></i>
+        </a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" title="Acessar página inicial">início</a></li>
+                <li><a href="restaurantes.html" title="Acessar sessão restaurantes">sobre</a></li>
+                <li><a href="chef_a_domicilio.html" title=" Acessar sessão chef à domicílio">chef à domicílio</a></li>
+                <li><a href="sobre.html" title="Acessar sessão sobre página">sobre</a></li>
+                <li><a href="fale_conosco" title="Acessar sessão fale conosco">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
+    </header>
+
+<!--começo-->
+    <div class="container-parceiros-chefs"><!-- selecionar parceiro -->
+        <h1>Cadastro de Parceiro</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <section class="botao">
+                <button class="botao">
+                    <a href="Cadastrodechefs.html">Chefs</a>
+                </button>
+
+                <button class="botao">
+                    <a href="CadastroDeRestaurantes.html">Restaurantes</a>
+                </button>
+            </section><!-- fim selecionar parceiro -->
+
+            <div class="camposdetexto"><!--começo formulário-->
+                <div>
+                    <label for="">Nome:</label><!--nome-->
+                    <input name="nome" required="required" placeholder="Digite o seu nome" type="text">
+                </div>
+
+                <div>
+                    <label for="data">Data de Nascimento</label><!--data de nascimento-->
+                    <input type="date" name="data" id="data" min="1950-01-01" max="2002-03-20">
+                </div>
+
+                <div>
+                    <label for="">Nome da Mãe:</label><!--nome da mãe-->
+                    <input name="nome-mae" required="required" placeholder="Digite o nome da sua mãe" type="text">
+                </div>
+
+                <div>
+                    <label for="">CPF:</label><!--CPF-->
+                    <input name="cpf" required="required" placeholder="Digite o seu CPF" type="text">
+                </div>
+
+                <div>
+                    <label for="">Celular:</label><!--celular-->
+                    <input  name="celular" required="required" placeholder="(**)*****-****" type="text">
+                </div>
+
+                <div>
+                    <label for="">Endereço:</label><!--endereço--> 
+                    <input name="endereco" required="required" placeholder="Digite o seu endereço" type="text">
+                </div>
+
+                <div class="camposdearquivo">
+                    <label for="">Foto:</label><!--foto-->
+                    <input required="required" name="foto" type="file">
+                </div>
+
+                <div class="camposdearquivo">
+                    <label for="">Antecedentes criminais:</label><!--antecedentes criminais-->
+                    <input required="required" name="antecedentes-criminais" type="file">
+                </div>
+                
+                <div class="camposdearquivo">
+                    <label for="">Experiências Profissionais:</label><!--experiências profissionais-->
+                    <input required="required" name="experiencias-profissionais" type="file">
+                </div>
+            </div><!--fim formulário-->
+            
+            
+            
+            
+            <div><!--termos de uso-->
+                <label for="termos">
+                    <input name="termosdeuso" id="termos" type="checkbox">
+                    Li e aceito os termos de uso do site</label>
+            </div>
+
+            <div class="enviar">
+                <button name="enviar" value="1" type="submit">Cadastrar</button>
+            </div>
+
+
+        </form>
+
+    </div>
+<!--fim-->
+    <footer>
+        <div class="baixo">
+            <div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="cadastroderestaurantes.html">Trabalhe Conosco</a></li>
+                    <div class="fale_conosco">
+                        <li>Fale Conosco:</li>
+                        <li>(11)9999-9999</li>
+                        <li>contato@nome.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="imagem-baixo">
+                <img src="img/logo-moblie.png" alt="Logo do site.">
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function btnMenu() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
