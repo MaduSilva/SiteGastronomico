@@ -18,6 +18,7 @@ body {
     /*tirar parte branca lateral do mobile*/
 }
 
+/* NAV */
 a {
     color: #000000;
     text-decoration: none;
@@ -72,7 +73,74 @@ header img {
     height: 100px;
     width: 100px;
 }
+/* FIM NAV */
+/* COMEÇO DO FOOTER */
+.web-restaurante, .tablet-restaurante{
+    display: none;
+}
+.shadow {
+    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
+}
 
+.ajustar-imagem img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+.ajustar-imagem p {
+    padding: 25px 0px 0px 10px;
+    font-weight: 700;
+    color: gray;
+}
+footer {
+    width: 100%;
+    height: 190px;
+    background-color: var(--areia);
+}
+footer .baixo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .imagem-baixo {
+    object-fit: cover;
+}
+.tablet-restaurante{
+    display: none;
+}
+footer ul {
+    margin-top: 25px;
+}
+footer ul li {
+    list-style-type: none;
+    font-size: 10px;
+}
+footer ul li a {
+    font-size: 10px;
+}
+footer ul .fale_conosco {
+    margin-top: 20px;
+    font-size: 10px;
+}
+footer li a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+footer .social-media {
+    display: flex;
+    width: 105px;
+    height: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .social-media i {
+    font-size: 20px;
+    color: var(--preto);
+}
+/* FIM DO FOOTER */
 /* Começo sessão sobre-home */
 .containersobre{
     background-color: var(--areia);
@@ -182,7 +250,6 @@ header img {
     border-radius: 10px;
     color: gray;
 }
-
 .filtro {
     display: flex;
     justify-content: space-around;
@@ -191,88 +258,15 @@ header img {
     padding: 10px 25px;
     margin: 15px 0px 15px 25px;
 }
-
 .filtro p {
     font-size: 25px;
     font-weight: 300;
     padding-right: 20px;
 }
-
 .container-restaurante section article {
     display: flex;
 }
 
-.shadow {
-    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
-}
-
-.ajustar-imagem img {
-    width: 200px;
-    height: 150px;
-    border-radius: 20px;
-}
-
-.ajustar-imagem p {
-    padding: 25px 0px 0px 10px;
-    font-weight: 700;
-    color: gray;
-}
-
-footer {
-    width: 100%;
-    height: 190px;
-    background-color: var(--areia);
-}
-
-footer .baixo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .imagem-baixo {
-    object-fit: cover;
-}
-.tablet-restaurante{
-    display: none;
-}
-footer ul {
-    margin-top: 25px;
-}
-
-footer ul li {
-    list-style-type: none;
-    font-size: 10px;
-}
-
-footer ul li a {
-    font-size: 10px;
-}
-
-footer ul .fale_conosco {
-    margin-top: 20px;
-    font-size: 10px;
-}
-
-footer li a {
-    text-decoration: none;
-    color: var(--preto);
-}
-
-footer .social-media {
-    display: flex;
-    width: 105px;
-    height: 80%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-footer .social-media i {
-    font-size: 20px;
-    color: var(--preto);
-}
 /* inicio página cadastro de usuário */
 .banner_cadastro_usuario{
     width: 100%;
@@ -542,6 +536,14 @@ div.sobre{
         justify-content: space-evenly;
         margin: 0px 0px 50px 0px;
     }
+    .article-restaurante1,
+    .article-restaurante2,
+    .article-restaurante3,
+    .article-restaurante4,
+    .article-restaurante5,
+    .article-restaurante6{
+        position: relative;
+    }
     .texto-restaurante h2, h3, h4,
     .texto-restaurante2 h2, h3, h4,
     .texto-restaurante3 h2, h3, h4,
@@ -580,71 +582,12 @@ div.sobre{
         margin-top: 5px;
         margin-right: 15px;
     }
-    .texto-restaurante {
-        width: 266px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 278px;
-        left: 94px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante2 {
-        width: 266px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 278px;
-        left: 440px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante3 {
-        width: 266px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 532px;
-        left: 94px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante4 {
-        width: 266px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 533px;
-        left: 440px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante5 {
-        width: 266px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 787px;
-        left: 94px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
+    .texto-restaurante,
+    .texto-restaurante1,
+    .texto-restaurante2,
+    .texto-restaurante3,
+    .texto-restaurante4,
+    .texto-restaurante5,
     .texto-restaurante6 {
         width: 266px;
         height: 80px;
@@ -653,10 +596,9 @@ div.sobre{
         text-align: left;
         position: absolute;
         z-index: 2;
-        top: 787px;
-        left: 440px;
+        top: 101px;
+        left: 7px;
         border-radius: 12px;
-        border-color: gray;
         background-color: rgba(128, 128, 128, 0.795);
     }
     .filtro{
@@ -813,13 +755,6 @@ div.sobre{
     /* Fim responsividade sobre*/
 }
 
-
-
-
-
-
-
-
 @media(min-width: 1366px) {
     .ajustar-imagem img{
         height: 250px;
@@ -853,83 +788,37 @@ div.sobre{
         margin-bottom: 20px;
         margin-right: 193px;
     }
-    .comidas1 h2, h3,
-    .comidas2 h2, h3,
-    .comidas3 h2, h3,
-    .comidas4 h2, h3,
-    .comidas5 h2, h3,
-    .comidas6 h2, h3,
-    .comidas7 h2, h3{
+    .c1 h2{
         position: absolute;
         color: white;
+        top: 29px;
+        left: -35px;
+        font-size: 25px;
+        text-shadow: 0.5px 0.5px 20px black;     
+    }
+    .c2 h3{
+        position: absolute;
+        color: white;
+        top: 29px;
+        left: 32px;
         font-size: 25px;
         text-shadow: 0.5px 0.5px 20px black;     
     }
 
-    .comidas1 h2 {
-        left: 980px;
-        top: 314px;
+    .c1{
+        position: relative;
     }
-    .comidas1 h3 {
-        left: 1134px;
-        top: 314px;
+    .c2{
+        position: relative;
     }
-
-
-    .comidas2 h2 {
-        left: 980px;
-        top: 500px;
-    }
-    .comidas2 h3 {
-        left: 1131px;
-        top: 501px;
-    }
-
-
-    .comidas3 h2 {
-        left: 980px;
-        top: 400px;
-    }
-    .comidas3 h3 {
-        left: 1130px;
-        top: 408px;
-    }
-
-
-    .comidas4 h2 {
-        left: 1145px;
-        top: 601px;
-    }
-    .comidas4 h3 {
-        left: 973px;
-        top: 602px;
-    }
-
-
-
-    .comidas5 h2 {
-        left: 1146px;
-        top: 695px;
-    }
-    .comidas5 h3 {
-        left: 972px;
-        top: 697px;
-    }
-    .comidas6 h2 {
-        left: 980px;
-        top: 792px;
-    }
-    .comidas6 h3 {
-        left: 1132px;
-        top: 790px;
-    }
-    .comidas7 h2 {
-        left: 1145px;
-        top: 888px;
-    }
-    .comidas7 h3 {
-        left: 969px;
-        top: 888px;
+    .comidas1,
+    .comidas2,
+    .comidas3,
+    .comidas4,
+    .comidas5,
+    .comidas6,
+    .comidas7{
+        display: flex;
     }
     #texto_aparece1{
         display: none;
@@ -948,72 +837,21 @@ div.sobre{
     }
     #texto_aparece6{
         display: none;
+    } 
+    .article-restaurante1,
+    .article-restaurante2,
+    .article-restaurante3,
+    .article-restaurante4,
+    .article-restaurante5,
+    .article-restaurante6{
+        position: relative;
     }
-    .texto-restaurante {
-        width: 332px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 328px;
-        left: 103px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante2 {
-        width: 332px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 327px;
-        left: 513px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante3 {
-        width: 332px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 682px;
-        left: 103px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante4 {
-        width: 333px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 682px;
-        left: 512px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
-    .texto-restaurante5 {
-        width: 332px;
-        height: 80px;
-        padding: 5px 0px 5px;
-        color: white;
-        text-align: left;
-        position: absolute;
-        z-index: 2;
-        top: 1036px;
-        left: 103px;
-        border-radius: 12px;
-        background-color: rgba(128, 128, 128, 0.795);
-    }
+    .texto-restaurante,
+    .texto-restaurante1,
+    .texto-restaurante2,
+    .texto-restaurante3,
+    .texto-restaurante4,
+    .texto-restaurante5,
     .texto-restaurante6 {
         width: 332px;
         height: 80px;
@@ -1022,10 +860,9 @@ div.sobre{
         text-align: left;
         position: absolute;
         z-index: 2;
-        top: 1036px;
-        left: 513px;
+        top: 147px;
+        left: 9px;
         border-radius: 12px;
-        border-color: gray;
         background-color: rgba(128, 128, 128, 0.795);
     }
     .web-restaurante{
@@ -1066,7 +903,6 @@ div.sobre{
         margin-top: 10px;
         margin-left: 90px;
     }
-
     .titulochefs h3{
         font-size: 30px;
         text-align: center;
