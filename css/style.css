@@ -18,6 +18,7 @@ body {
     /*tirar parte branca lateral do mobile*/
 }
 
+/* NAV */
 a {
     color: #000000;
     text-decoration: none;
@@ -72,7 +73,74 @@ header img {
     height: 100px;
     width: 100px;
 }
+/* FIM NAV */
+/* COMEÇO DO FOOTER */
+.web-restaurante, .tablet-restaurante{
+    display: none;
+}
+.shadow {
+    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
+}
 
+.ajustar-imagem img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+.ajustar-imagem p {
+    padding: 25px 0px 0px 10px;
+    font-weight: 700;
+    color: gray;
+}
+footer {
+    width: 100%;
+    height: 190px;
+    background-color: var(--areia);
+}
+footer .baixo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .imagem-baixo {
+    object-fit: cover;
+}
+.tablet-restaurante{
+    display: none;
+}
+footer ul {
+    margin-top: 25px;
+}
+footer ul li {
+    list-style-type: none;
+    font-size: 10px;
+}
+footer ul li a {
+    font-size: 10px;
+}
+footer ul .fale_conosco {
+    margin-top: 20px;
+    font-size: 10px;
+}
+footer li a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+footer .social-media {
+    display: flex;
+    width: 105px;
+    height: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .social-media i {
+    font-size: 20px;
+    color: var(--preto);
+}
+/* FIM DO FOOTER */
 /* Começo sessão sobre-home */
 .containersobre{
     background-color: var(--areia);
@@ -155,7 +223,7 @@ header img {
     align-items: center;
 }
 
-.titulochefs h3 {
+.conceituados h3 {
     margin-left: 25px;
     font-weight: lighter;
 }
@@ -182,7 +250,6 @@ header img {
     border-radius: 10px;
     color: gray;
 }
-
 .filtro {
     display: flex;
     justify-content: space-around;
@@ -191,86 +258,15 @@ header img {
     padding: 10px 25px;
     margin: 15px 0px 15px 25px;
 }
-
 .filtro p {
     font-size: 25px;
     font-weight: 300;
     padding-right: 20px;
 }
-
 .container-restaurante section article {
     display: flex;
 }
 
-.shadow {
-    box-shadow: -2px 4px 15px var(--shadow), -6px -6px 10px var(--light);
-}
-
-.ajustar-imagem img {
-    width: 200px;
-    height: 150px;
-    border-radius: 20px;
-}
-
-.ajustar-imagem p {
-    padding: 25px 0px 0px 10px;
-    font-weight: 700;
-    color: gray;
-}
-
-footer {
-    width: 100%;
-    height: 190px;
-    background-color: var(--areia);
-}
-
-footer .baixo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .imagem-baixo {
-    object-fit: cover;
-}
-
-footer ul {
-    margin-top: 25px;
-}
-
-footer ul li {
-    list-style-type: none;
-    font-size: 10px;
-}
-
-footer ul li a {
-    font-size: 10px;
-}
-
-footer ul .fale_conosco {
-    margin-top: 20px;
-    font-size: 10px;
-}
-
-footer li a {
-    text-decoration: none;
-    color: var(--preto);
-}
-
-footer .social-media {
-    display: flex;
-    width: 105px;
-    height: 80%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-footer .social-media i {
-    font-size: 20px;
-    color: var(--preto);
-}
 /* inicio página cadastro de usuário */
 .banner_cadastro_usuario{
     width: 100%;
@@ -413,8 +409,9 @@ div.sobre{
 }
 
 .informacoes p{
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 12px;
+    margin-top: -32px;
+    margin-left: -31px;
 }
 
 .informacoes h1{
@@ -425,7 +422,7 @@ div.sobre{
     display: flex;
     margin-top: 50px;
     margin-left: 40px;
-    width: 80%;
+    width: 100%;
     font-size: 14px;
     text-align: center;
     text-align: start;
@@ -521,8 +518,146 @@ div.sobre{
 
 
 
+.criador_2{
+
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 207px;
+    width: 85%;
+    margin-left: 36px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 50px;
+}
+.criador_2 img{
+    display: flex;
+    border-radius: 50em;
+    height: 138px;
+    margin-top: 28px;
+    margin-left: 23px;
+}
+
+.criador_2 h3{
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 11px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.criador_2 p{
+    margin-top: 111px;
+    margin-left: -130px;
+    font-size: 7.5px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.responsividade{
+    display: flex;
+    margin-left: 36px;
+}
 
 @media(min-width: 800px) {
+    .mobile-restaurante{
+        display: none;
+    }
+    #menu {
+        z-index: 99;
+    }
+    .ajustar-imagem img{
+        width: 280px;
+        height: 200px;
+    }
+    
+    .tablet-restaurante{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    section .restaurantes-tablet{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px 0px 50px 0px;
+    }
+    .article-restaurante1,
+    .article-restaurante2,
+    .article-restaurante3,
+    .article-restaurante4,
+    .article-restaurante5,
+    .article-restaurante6{
+        position: relative;
+    }
+    .texto-restaurante h2, .texto-restaurante h3,
+    .texto-restaurante h4,
+    .texto-restaurante2 h2, .texto-restaurante2 h3,
+    .texto-restaurante2 h4,
+    .texto-restaurante3 h2, .texto-restaurante3 h3, 
+    .texto-restaurante3 h4,
+    .texto-restaurante4 h2, .texto-restaurante4 h3, 
+    .texto-restaurante4 h4,
+    .texto-restaurante5 h2, .texto-restaurante5 h3, 
+    .texto-restaurante5 h4,
+    .texto-restaurante6 h2, .texto-restaurante6 h3, 
+    .texto-restaurante6 h4{
+        margin-left: 13px;
+    }
+    .texto-restaurante h2,
+    .texto-restaurante2 h2,
+    .texto-restaurante3 h2,
+    .texto-restaurante4 h2,
+    .texto-restaurante5 h2,
+    .texto-restaurante6 h2{
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .texto-restaurante h3,  .texto-restaurante h4,
+    .texto-restaurante2 h3, .texto-restaurante2 h4,
+    .texto-restaurante3 h3, .texto-restaurante3 h4,
+    .texto-restaurante4 h3, .texto-restaurante4 h4,
+    .texto-restaurante5 h3, .texto-restaurante5 h4,
+    .texto-restaurante6 h3, .texto-restaurante6 h4{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .texto-restaurante h4,
+    .texto-restaurante2 h4,
+    .texto-restaurante3 h4,
+    .texto-restaurante4 h4,
+    .texto-restaurante5 h4,
+    .texto-restaurante6 h4{
+        text-align: right;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+    .texto-restaurante,
+    .texto-restaurante1,
+    .texto-restaurante2,
+    .texto-restaurante3,
+    .texto-restaurante4,
+    .texto-restaurante5,
+    .texto-restaurante6 {
+        width: 266px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 101px;
+        left: 7px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .filtro{
+        margin: 15px 0px 30px 90px;
+    }
     footer .social-media {
         width: 150px;
     }
@@ -622,23 +757,172 @@ div.sobre{
     }
 
     .informacoes p{
-        font-size: 19px;
+        font-size: 17px;
         text-align: center;
-        margin-left: 70px;
+        margin-left: -24px;
     }
     
+
+
+    .criador_1 img{
+        height: 104px;
+        margin-left: 58px;
+    }
+
+    .criador_1 h3{
+        display: none;
+    }
+
+    .criador_1 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -140px;
+    }
+
+
+    .criador_2{
+        display: inline-flex;
+        margin-left: 124px;
+        height: 358px;
+        width: 27%;
+    }
+
+    .criador_2 img{
+        height: 104px;
+        margin-left: 58px;
+    }
+
+    .criador_2 h3{
+        display: none;
+    }
+
+    .criador_2 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -140px;
+    }
+
+    /* Fim responsividade sobre*/
 }
 
-
-
-
-
-
-
-
 @media(min-width: 1366px) {
+    .ajustar-imagem img{
+        height: 250px;
+        width: 350px;
+    }
+    .tablet-restaurante{
+        display: none;
+    }
+    section .restaurantes-tablet{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        margin: 100px 0px 50px 0px;
+    }
+    .restaurantes-tablet article{
+        margin-left: 60px;
+    }
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        justify-content: center;
+        align-items: center;
+        margin: 105px 63px;
+        width: 380px;
+        border-radius: 15px;
+        padding: 40px 0px 50px 0px;
+    }
+    .categorias h1{
+        margin-bottom: 20px;
+        margin-right: 193px;
+    }
+    .c1 h2{
+        position: absolute;
+        color: white;
+        top: 29px;
+        left: -35px;
+        font-size: 25px;
+        text-shadow: 0.5px 0.5px 20px black;     
+    }
+    .c2 h3{
+        position: absolute;
+        color: white;
+        top: 29px;
+        left: 32px;
+        font-size: 25px;
+        text-shadow: 0.5px 0.5px 20px black;     
+    }
 
-    /*footer*/
+    .c1{
+        position: relative;
+    }
+    .c2{
+        position: relative;
+    }
+    .comidas1,
+    .comidas2,
+    .comidas3,
+    .comidas4,
+    .comidas5,
+    .comidas6,
+    .comidas7{
+        display: flex;
+    }
+    #texto_aparece1{
+        display: none;
+    }
+    #texto_aparece2{
+        display: none;
+    }
+    #texto_aparece3{
+        display: none;
+    }
+    #texto_aparece4{
+        display: none;
+    }
+    #texto_aparece5{
+        display: none;
+    }
+    #texto_aparece6{
+        display: none;
+    } 
+    .article-restaurante1,
+    .article-restaurante2,
+    .article-restaurante3,
+    .article-restaurante4,
+    .article-restaurante5,
+    .article-restaurante6{
+        position: relative;
+    }
+    .texto-restaurante,
+    .texto-restaurante1,
+    .texto-restaurante2,
+    .texto-restaurante3,
+    .texto-restaurante4,
+    .texto-restaurante5,
+    .texto-restaurante6 {
+        width: 332px;
+        height: 80px;
+        padding: 5px 0px 5px;
+        color: white;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        top: 147px;
+        left: 9px;
+        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.795);
+    }
+    .web-restaurante{
+        display: flex;
+        margin: 0 auto;
+        width: 1366px;
+    }
+    footer {
+        height: 230px;
+    }
     footer .social-media {
         width: 175px;
     }
@@ -669,73 +953,93 @@ div.sobre{
         margin-top: 10px;
         margin-left: 90px;
     }
-
     .titulochefs h3{
         font-size: 30px;
         text-align: center;
     }
 
-    .Loguinho {
-        margin-left: 750px;
-        margin-top: -40px;
-        display: flex;
-        align-items: center;
-        width: 40px;
-        height: 45px;
+    /*página sobre*/
+    .sobre h1{
+        margin-top: -5px;
+        margin-left: 600px;
+        font-size: 60px;
     }
 
-    .nomes{
-        font-size: 20px;
+    .informacoes{
+        margin-left: 50px;
     }
 
-    .nomes div{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    /*fim home sessão chefs*/
-    /*página cadastro de parceiro*/
-    .containerparceiros {
-        margin-left: 560px;
-    }
-    /*fim página cadastro de parceiros*/
-
-    /* começo sessão sobre-home */
-    .containersobre{
-        width: 80%;
-        height: 300px;
-    }
-
-    .contentsobre img{
-        width: 300px;
-        height: 230px;
-        border-radius: 10px;
-    }
-
-    .cardsobre h2{
-        font-size: 25px;
-        margin-bottom: 5px;
+    .informacoes p{
+        font-size: 22px;
+        
+        margin-left: -30px;
+    }  
     
+    .criadores h1{
+        font-size: 58px;
     }
 
-    .textosobre{
-        padding: 0 30px;
+    .criador_1 img{
+        height: 97px;
+        margin-left: 58px;
     }
 
-    .textosobre p{
-        font-weight: initial;
+    .criador_1 h3{
+        display: none;
     }
 
-    .cardsobre strong p{
-        display: block;
+    .criador_1 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -145px;
     }
 
-    .textosobre button{
-        border-radius: 30px;
-        font-size: 17px;
-        padding: 5px;
-        margin-top: 30px;
-        margin-left: 170px;
+    .criador_1{
+        height: 361px;
+        margin-left: 48px;
+        width: 16%;    
     }
-    /* fim sessão sobre-home */
+
+
+    .criador_2{
+        height: 363px;
+        width: 18%;
+        margin-left: 106px;
+        margin-right: -67px;
+    }
+
+    .criador_2 img{
+        height: 97px;
+        margin-left: 58px;
+    }
+
+    .criador_2 h3{
+        display: none;
+    }
+
+    .criador_2 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -145px;
+    } 
+
+    .cardcriadores{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .responsividade{
+        width: 90%;
+        display: flex;
+        margin-top: -411px;
+        justify-content: flex-end;
+    }
+    /*fim responsividade sobre*/
+    /*início responsividade cadastro de parceiro*/
+
+    .containerparceiros{
+    margin-left: 560px;
+    }
+ 
+
 }
