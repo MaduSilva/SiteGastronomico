@@ -530,6 +530,9 @@ div.sobre{
     .mobile-restaurante{
         display: none;
     }
+    #menu {
+        z-index: 99;
+    }
     .ajustar-imagem img{
         width: 280px;
         height: 200px;
@@ -557,12 +560,18 @@ div.sobre{
     .article-restaurante6{
         position: relative;
     }
-    .texto-restaurante h2, h3, h4,
-    .texto-restaurante2 h2, h3, h4,
-    .texto-restaurante3 h2, h3, h4,
-    .texto-restaurante4 h2, h3, h4,
-    .texto-restaurante5 h2, h3, h4,
-    .texto-restaurante6 h2, h3, h4{
+    .texto-restaurante h2, .texto-restaurante h3,
+    .texto-restaurante h4,
+    .texto-restaurante2 h2, .texto-restaurante2 h3,
+    .texto-restaurante2 h4,
+    .texto-restaurante3 h2, .texto-restaurante3 h3, 
+    .texto-restaurante3 h4,
+    .texto-restaurante4 h2, .texto-restaurante4 h3, 
+    .texto-restaurante4 h4,
+    .texto-restaurante5 h2, .texto-restaurante5 h3, 
+    .texto-restaurante5 h4,
+    .texto-restaurante6 h2, .texto-restaurante6 h3, 
+    .texto-restaurante6 h4{
         margin-left: 13px;
     }
     .texto-restaurante h2,
@@ -575,12 +584,12 @@ div.sobre{
         margin-top: 10px;
         font-weight: 400;
     }
-    .texto-restaurante h3, h4,
-    .texto-restaurante2 h3, h4,
-    .texto-restaurante3 h3, h4,
-    .texto-restaurante4 h3, h4,
-    .texto-restaurante5 h3, h4,
-    .texto-restaurante6 h3, h4{
+    .texto-restaurante h3,  .texto-restaurante h4,
+    .texto-restaurante2 h3, .texto-restaurante2 h4,
+    .texto-restaurante3 h3, .texto-restaurante3 h4,
+    .texto-restaurante4 h3, .texto-restaurante4 h4,
+    .texto-restaurante5 h3, .texto-restaurante5 h4,
+    .texto-restaurante6 h3, .texto-restaurante6 h4{
         font-size: 12px;
         font-weight: 200;
     }
