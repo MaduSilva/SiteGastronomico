@@ -517,6 +517,9 @@ div.sobre{
     .mobile-restaurante{
         display: none;
     }
+    #menu {
+        z-index: 99;
+    }
     .ajustar-imagem img{
         width: 280px;
         height: 200px;
