@@ -155,7 +155,7 @@ header img {
     align-items: center;
 }
 
-.titulochefs h3 {
+.conceituados h3 {
     margin-left: 25px;
     font-weight: lighter;
 }
@@ -415,8 +415,9 @@ div.sobre{
 }
 
 .informacoes p{
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 12px;
+    margin-top: -32px;
+    margin-left: -31px;
 }
 
 .informacoes h1{
@@ -427,7 +428,7 @@ div.sobre{
     display: flex;
     margin-top: 50px;
     margin-left: 40px;
-    width: 80%;
+    width: 100%;
     font-size: 14px;
     text-align: center;
     text-align: start;
@@ -476,6 +477,46 @@ div.sobre{
     font-size: 7.5px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.criador_2{
+
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 207px;
+    width: 85%;
+    margin-left: 36px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 50px;
+}
+.criador_2 img{
+    display: flex;
+    border-radius: 50em;
+    height: 138px;
+    margin-top: 28px;
+    margin-left: 23px;
+}
+
+.criador_2 h3{
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 11px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.criador_2 p{
+    margin-top: 111px;
+    margin-left: -130px;
+    font-size: 7.5px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.responsividade{
+    display: flex;
+    margin-left: 36px;
 }
 
 @media(min-width: 800px) {
@@ -720,11 +761,56 @@ div.sobre{
     }
 
     .informacoes p{
-        font-size: 19px;
+        font-size: 17px;
         text-align: center;
-        margin-left: 70px;
+        margin-left: -24px;
     }
 
+    .criador_1{
+        display: inline-flex;
+        height: 358px;
+        width: 27%;
+    }
+
+    .criador_1 img{
+        height: 104px;
+        margin-left: 58px;
+    }
+
+    .criador_1 h3{
+        display: none;
+    }
+
+    .criador_1 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -140px;
+    }
+
+
+    .criador_2{
+        display: inline-flex;
+        margin-left: 124px;
+        height: 358px;
+        width: 27%;
+    }
+
+    .criador_2 img{
+        height: 104px;
+        margin-left: 58px;
+    }
+
+    .criador_2 h3{
+        display: none;
+    }
+
+    .criador_2 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -140px;
+    }
+
+    /* Fim responsividade sobre*/
 }
 
 
@@ -985,6 +1071,89 @@ div.sobre{
         font-size: 30px;
         text-align: center;
     }
-}
-@media (min-width: 1380px){
+
+    /*página sobre*/
+    .sobre h1{
+        margin-top: -5px;
+        margin-left: 600px;
+        font-size: 60px;
+    }
+
+    .informacoes{
+        margin-left: 50px;
+    }
+
+    .informacoes p{
+        font-size: 22px;
+        
+        margin-left: -30px;
+    }  
+    
+    .criadores h1{
+        font-size: 58px;
+    }
+
+    .criador_1 img{
+        height: 97px;
+        margin-left: 58px;
+    }
+
+    .criador_1 h3{
+        display: none;
+    }
+
+    .criador_1 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -145px;
+    }
+
+    .criador_1{
+        height: 361px;
+        margin-left: 48px;
+        width: 16%;    
+    }
+
+
+    .criador_2{
+        height: 363px;
+        width: 18%;
+        margin-left: 106px;
+        margin-right: -67px;
+    }
+
+    .criador_2 img{
+        height: 97px;
+        margin-left: 58px;
+    }
+
+    .criador_2 h3{
+        display: none;
+    }
+
+    .criador_2 p{
+        margin-top: 134px;
+        font-size: 14.5px;
+        margin-left: -145px;
+    } 
+
+    .cardcriadores{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .responsividade{
+        width: 90%;
+        display: flex;
+        margin-top: -411px;
+        justify-content: flex-end;
+    }
+    /*fim responsividade sobre*/
+    /*início responsividade cadastro de parceiro*/
+
+    .containerparceiros{
+    margin-left: 560px;
+    }
+ 
+
 }
