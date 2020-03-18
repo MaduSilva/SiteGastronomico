@@ -196,7 +196,7 @@ footer .social-media i {
 
 
 
-
+/*ínicio sessão chefs home*/
 
 .containerchefs{
     background-color: var(--areia);
@@ -223,7 +223,7 @@ footer .social-media i {
     align-items: center;
 }
 
-.conceituados h3 {
+.titulochefs h3{
     margin-left: 25px;
     font-weight: lighter;
 }
@@ -926,10 +926,18 @@ div.sobre{
         margin-left: 90px;
     }
     .titulochefs h3{
+        margin-left: -429px;
         font-size: 30px;
         text-align: center;
     }
 
+    .Loguinho{
+        width: 27px;
+        height: 33px;
+        margin-left: 501px;
+        margin-top: -34px;
+    }
+    /* fimhome sessão chefs*/
     /*página sobre*/
     .sobre h1{
         margin-top: -5px;
