@@ -27,57 +27,78 @@
                 <li><a href="restaurantes.html" title="Acessar sessão restaurantes">sobre</a></li>
                 <li><a href="chef_a_domicilio.html" title=" Acessar sessão chef à domicílio">chef à domicílio</a></li>
                 <li><a href="sobre.html" title="Acessar sessão sobre página">sobre</a></li>
-                <li><a href="#" title="Acessar sessão fale conosco">Fale Conosco</a></li>
+                <li><a href="fale_conosco" title="Acessar sessão fale conosco">Fale Conosco</a></li>
             </ul>
         </nav>
         <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
     </header>
 
-
-    <div class="containerparceiros">
-
+<!--começo-->
+    <div class="container-parceiros-chefs"><!-- selecionar parceiro -->
         <h1>Cadastro de Parceiro</h1>
         <form action="" method="post" enctype="multipart/form-data">
 
             <section class="botao">
                 <button class="botao">
-                    <a href="cadastrodechefs.html">Chefs</a>
+                    <a href="Cadastrodechefs.html">Chefs</a>
                 </button>
 
                 <button class="botao">
                     <a href="CadastroDeRestaurantes.html">Restaurantes</a>
                 </button>
-            </section>
+            </section><!-- fim selecionar parceiro -->
 
-            <div class="camposdetexto">
+            <div class="camposdetexto"><!--começo formulário-->
                 <div>
-                    <label for="">Nome do Estabelecimento:</label>
-                    <input name="nome" required="required" placeholder="Digite o nome do restaurante" type="text">
+                    <label for="">Nome:</label><!--nome-->
+                    <input name="nome" required="required" placeholder="Digite o seu nome" type="text">
                 </div>
 
                 <div>
-                    <label for="">Endereço:</label>
-                    <input name="endereco" required="required" placeholder="Digite o endereço do restaurante"
-                        type="text">
+                    <label for="data">Data de Nascimento</label><!--data de nascimento-->
+                    <input type="date" name="data" id="data" min="1950-01-01" max="2002-03-20">
                 </div>
 
                 <div>
-                    <label for="">Tipo de Cozinha:</label>
-                    <input name="cozinha" required="required" placeholder="Digite o tipo de cozinha" type="text">
+                    <label for="">Nome da Mãe:</label><!--nome da mãe-->
+                    <input name="nome-mae" required="required" placeholder="Digite o nome da sua mãe" type="text">
                 </div>
 
                 <div>
-                    <label for="">Rede Social:</label>
-                    <input name="rede" required="required" placeholder="Digite a rede social do restaurante"
-                        type="text">
+                    <label for="">CPF:</label><!--CPF-->
+                    <input name="cpf" required="required" placeholder="Digite o seu CPF" type="text">
                 </div>
 
                 <div>
-                    <label for="">Foto do Estabelecimento:</label>
+                    <label for="">Celular:</label><!--celular-->
+                    <input  name="celular" required="required" placeholder="(**)*****-****" type="text">
+                </div>
+
+                <div>
+                    <label for="">Endereço:</label><!--endereço--> 
+                    <input name="endereco" required="required" placeholder="Digite o seu endereço" type="text">
+                </div>
+
+                <div class="camposdearquivo">
+                    <label for="">Foto:</label><!--foto-->
                     <input required="required" name="foto" type="file">
                 </div>
-            </div>
-            <div>
+
+                <div class="camposdearquivo">
+                    <label for="">Antecedentes criminais:</label><!--antecedentes criminais-->
+                    <input required="required" name="antecedentes-criminais" type="file">
+                </div>
+                
+                <div class="camposdearquivo">
+                    <label for="">Experiências Profissionais:</label><!--experiências profissionais-->
+                    <input required="required" name="experiencias-profissionais" type="file">
+                </div>
+            </div><!--fim formulário-->
+            
+            
+            
+            
+            <div><!--termos de uso-->
                 <label for="termos">
                     <input name="termosdeuso" id="termos" type="checkbox">
                     Li e aceito os termos de uso do site</label>
@@ -91,12 +112,12 @@
         </form>
 
     </div>
-
+<!--fim-->
     <footer>
         <div class="baixo">
             <div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
                     <li><a href="cadastroderestaurantes.html">Trabalhe Conosco</a></li>
                     <div class="fale_conosco">
