@@ -513,6 +513,19 @@ div.sobre{
     margin-left: 36px;
 }
 
+/* ínicio página CHEFS*/
+
+.Especialidades h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #737373;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 @media(min-width: 800px) {
     .mobile-restaurante{
         display: none;
