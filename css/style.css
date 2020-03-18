@@ -559,17 +559,20 @@ div.sobre{
     margin-left: 23px;
 }
 
-.criador_1 h3{
+.criador_1 ul{
     font-weight: lighter;
     margin-top: 7px;
     margin-left: 15px;
-    font-size: 11px;
+    font-size: 10px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
 }
 .criador_1 p{
     margin-top: 111px;
-    margin-left: -130px;
+    margin-left: -140px;
     font-size: 7.5px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
