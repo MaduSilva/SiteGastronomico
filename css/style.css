@@ -745,15 +745,18 @@ div.sobre{
     .banner_cadastro_usuario h1{
         font-size: 2.5em;
     }
-    .formularios_usuarios{
+    .form_cadastro_usuario{
         font-size: 1.5em;
     }
-    h2{
-        margin-left:80px ;
+    .formularios_usuarios h2{
+        padding-left: 3em;
     }
-    .seila_usuario{
-        font-size: 2em;
-        margin-left: 100px;
+    .formulario_bancários_usuários{
+        font-size: 1.5em;
+    }
+    .botao_usuario{
+    padding-left: 2em;
+    padding-right: 2em;
     }
     /* Fim cadastro usuário */
     /*Sobre o site*/
