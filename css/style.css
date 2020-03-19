@@ -596,6 +596,44 @@ div.sobre{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
+.criador_2{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 207px;
+    width: 85%;
+    margin-left: 36px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 50px;
+}
+.criador_2 img{
+    display: flex;
+    border-radius: 50em;
+    height: 138px;
+    margin-top: 28px;
+    margin-left: 23px;
+}
+
+.criador_2 ul{
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 10px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.criador_2 p{
+    margin-top: 111px;
+    margin-left: -140px;
+    font-size: 7.5px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
 /*Página de cadastro-parceiros-chefs*/
 .container-parceiros-chefs {
     margin-top: 80px;
@@ -670,16 +708,12 @@ div.sobre{
 }
 .criador_2 p{
     margin-top: 111px;
-    margin-left: -130px;
+    margin-left: -140px;
     font-size: 7.5px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-.responsividade{
-    display: flex;
-    margin-left: 36px;
-}
 
 /* ínicio página CHEFS*/
 
