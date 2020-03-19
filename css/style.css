@@ -55,6 +55,7 @@ header img {
 }
 
 #menu {
+    z-index: 99;
     background-color: white;
     position: absolute;
     top: 80px;
@@ -876,105 +877,122 @@ div.sobre{
     /* começo restaurantes-home*/
     .restaurantes{
         display: flex;
-        height: 400px;
+        height: 210px;
         width: 70%;
+        /*
         box-sizing: border-box;
         border-style: groove;
         border-radius: 20px;
+        */
         margin: auto;
-        margin-top: 80px;
+        margin-top: 19px;
     }
-
+    
     .restaurantes img{
         display: flex;
-        width: 100%;
-        border-radius: 20px;
-        border-style: groove;
-        border-color: #000;
+        width: 84%;
+        margin-left: 54px;
+        /* border-radius: 20px; */
+        /* border-style: double; */
+        /* object-fit: scale-down; */
+        /* border-color: #000; */
+        height: 238px;
     }
-
+    
     #inf_restaurantes{
         position: absolute;
-        background-color: #EFB263;
-        display: flex;
-        height: 140px;
-        width: 68.8%;
-        margin-top: 250px;
-        margin-left: -0.1px;
-        border-style: groove;
-        border-color: #000;
-        border-radius: 20px;
+    background-color: #EFB263;
+    display: flex;
+    height: 98px;
+    width: 55.8%;
+    margin-top: 144px;
+    margin-left: 62.9px;
+    border-style: groove;
+    border-color: #000;
+    border-radius: 20px;
     }
-
+    
     #inf_restaurantes li{
         color: black;
         display: block;
-        margin-left: 40px;
+        margin-left: 28px;
         padding: 0.1px;
-        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
         list-style: none;
-        margin-top: 6px;
+        margin-top: 5px;
     }
-
+    
     #inf_restaurantes .estrela1{
         color: #FFC107;
-        margin-left: 125px;
-        margin-top: 90px;
-        position: absolute;
-        border-style: none;
-        display: flex;
-        width: 30px;
+            margin-left: 74px;
+            margin-top: 52px;
+            height: 15px;
+            position: absolute;
+            border-style: none;
+            display: flex;
+            width: 16px;
     }
-
+    
     #inf_restaurantes .estrela2{
         color: #FFC107;
-        margin-left: 160px;
-        margin-top: 90px;
+        margin-left: 90px;
+        margin-top: 52px;
+        height: 15px;
         position: absolute;
         border-style: none;
         display: flex;
-        width: 30px;
+        width: 16px;
     }
-
+    
     #inf_restaurantes .estrela3{
         color: #FFC107;
-        margin-left: 195px;
-        margin-top: 90px;
+        margin-left: 107px;
+        margin-top: 52px;
+        height: 15px;
         position: absolute;
         border-style: none;
         display: flex;
-        width: 30px;
+        width: 16px;
     }
-
+    
     #inf_restaurantes p{
-         color: black;
-         margin-top: 10px;
-        margin-left: 24px;
-         font-size: 15px;
-         text-align: start;
+        color: black;
+    margin-top: 25px;
+    margin-left: 12px;
+    display: flex;
+    font-size: 11px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
     }
-
+    
     .raio{
-        margin-top: 20px;
-        margin-left: 10px;
+        margin-top: 76px;
+        margin-left: -73px;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
+    
+    
+    
+    
     .seta_esquerda{
         position: absolute;
         display: flex;
-        height: 80px;
-        width: 60px;
-        margin-top: -240px;
-        margin-left: 40px;
+        height: 28px;
+        width: 21px;
+        margin-top: -119px;
+        margin-left: 157px;
     }
-
+    
     .seta_direita{
         position: absolute;
         display: flex;
-        height: 80px;
-        width: 60px;
-        margin-top: -240px;
-        margin-left: 700px;
+        height: 28px;
+        width: 21px;
+        margin-top: -119px;
+        margin-left: 640px;
     }
 
     /*fim restaurantes-home*/
@@ -982,7 +1000,7 @@ div.sobre{
     .containersobre{
         height: 225px;
         margin: 0 auto;
-        margin-top: 156px;
+        margin-top: 80px;
         margin-bottom: 30px;
     }
 
@@ -1230,7 +1248,8 @@ div.sobre{
     .containerchefs {
         width: 70%;
         height: 350px;
-        margin-left: 200px;
+        margin-left: 220px;
+        margin-bottom: 40px;
     }
     .chefsrenomeados img {
         width: 200px;
@@ -1255,106 +1274,110 @@ div.sobre{
     /* home sessão restaurantes*/
     .restaurantes{
         display: flex;
-        height: 400px;
+        height: 210px;
         width: 70%;
-        box-sizing: border-box;
-        border-style: groove;
-        border-radius: 20px;
         margin: auto;
-        margin-top: 80px;
-       
+        margin-top: 19px;
     }
-
+    
     .restaurantes img{
-        display: flex;
-        width: 100%;
-        border-radius: 20px;
-        border-style: groove;
-        border-color: #000;
+        width: 700px;
+        margin-left: 152px;
+        height: 351px;
     }
-
+    
     #inf_restaurantes{
-        position: absolute;
-        background-color: #EFB263;
-        display: flex;
-        height: 140px;
-        width: 69.2%;
-        margin-top: 360px;
-        margin-left: -0.1px;
-        margin-bottom: 50px;
-        border-style: groove;
-        border-color: #000;
-        border-radius: 20px;
-    }
+        height: 142px;
+    width: 48.8%;
+    margin-top: 189px;
+    margin-left: 166.9px;
 
+    }
+    
     #inf_restaurantes li{
-        color: #B3854A;
-        display: block;
-        margin-left: 50px;
-        padding: 0.1px;
-        font-size: 25px;
-        list-style: none;
-        margin-top: 12px;
+        margin-left: 28px;
+        font-size: 24px;
+        margin-top: 5px;
     }
-
+    
     #inf_restaurantes .estrela1{
-        color: #FFC107;
-        margin-left: 135px;
-        margin-top: 90px;
-        position: absolute;
-        border-style: none;
-        display: flex;
-        width: 30px;
+        margin-left: 107px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
     }
-
+    
     #inf_restaurantes .estrela2{
-        color: #FFC107;
-        margin-left: 170px;
-        margin-top: 90px;
-        position: absolute;
-        border-style: none;
-        display: flex;
-        width: 30px;
+        margin-left: 139px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
     }
-
+    
     #inf_restaurantes .estrela3{
-        color: #FFC107;
-        margin-left: 205px;
-        margin-top: 90px;
-        position: absolute;
-        border-style: none;
-        display: flex;
-        width: 30px;
+        margin-left: 172px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
     }
-
+    
     #inf_restaurantes p{
-        color: #B3854A;
-        margin-top: 30px;
-        margin-left: 170px;
-        display: flex;
-        font-size: 20px;
+        margin-top: 19px;
+        margin-left: 17px;
+        font-size: 17px;
         height: 50px;
-        text-align: justify;
+         text-align: justify;
     }
-
-    .seta_esquerda{
-        position: absolute;
-        display: flex;
-        height: 80px;
-        width: 60px;
-        margin-top: -190px;
-        margin-left: 75px;
+    
+    .raio{
+        margin-top: 117px;
+        margin-left: -115px;
+        font-size: 20px;
     }
-
+    
+    
+    .seta_esquerda{   
+        height: 50px;
+        width: 50px;
+        margin-top: -87px;
+        margin-left: 302px;
+    }
+    
     .seta_direita{
-        position: absolute;
-        display: flex;
-        height: 80px;
-        width: 60px;
-        margin-top: -190px;
-        margin-left: 1235px;
+        height: 50px;
+        width: 50px;
+        margin-top: -87px;
+        margin-left: 1062px;
     }
     /*fim home sessão restaurantes*/
+    /* Home sessão sobre*/
+    .contentsobre p {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+
+    .textosobre button {
+        font-size: 17px;
+         margin-top: 17px;
+        margin-left: 727px;
+    }
+
+    .containersobre {
+        height: 265px;
+        margin-top: 137px;
+    }
+
+    .contentsobre img {
+        width: 297px;
+        height: 194px;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+
+    .cardsobre h2 {
+        font-size: 25px;
+    }
+
     /*página sobre*/
     .sobre h1{
         margin-top: -5px;
