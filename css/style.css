@@ -1514,8 +1514,8 @@ div.sobre{
     }
 
     .criador_1 img{
-        height: 143px;
-     margin-left: 58px;
+        height: 97px;
+        margin-left: 58px;
     }
 
     .criador_1 h3{
@@ -1524,14 +1524,14 @@ div.sobre{
 
     .criador_1 p{
         margin-top: 130px;
-        font-size: 13.5px;
-        margin-left: -192px;
+        font-size: 14.5px;
+        margin-left: -141px;
     }
 
     .criador_1{
-        height: 221px;
-        margin-left: 237px;
-        width: 68%;
+        height: 366px;
+        margin-left: 59px;
+        width: 23%;
     }
 
     .criador_1 ul{
@@ -1540,16 +1540,23 @@ div.sobre{
     font-size: 14px;
     }
 
+    .CardsCriadores {
+        margin-left: 19px;
+        display: flex;
+        margin-right: 87px;
+    }
+
     .criador_2{
         height: 363px;
-        width: 18%;
-        margin-left: 106px;
-        margin-right: -67px;
+        width: 23%;
+        margin-left: 53px;
+        margin-right: -17px;
     }
 
     .criador_2 img{
         height: 97px;
         margin-left: 58px;
+        
     }
 
     .criador_2 h3{
@@ -1606,13 +1613,23 @@ div.sobre{
         margin-top: 2em;
     }
     /* Fim página cadastro de usuário */
-
+    /*nav menu*/
+    
+    /*
     .fa-bars:before{
         display: none;
     }
- 
+    */
+    
     .chef_1{
             margin-left: 116px;
         }  
 
-}
+    
+
+    label[for="menu"]{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    }
