@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastrô</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <a href="#" class="btn circle" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
+        <a href="index.html" title="acessar a home">
+            <div class="logo">
+                <img src="img/logo-moblie.png" alt="Logo do Gastro">
+            </div>
+        </a>
+        <a class="pesquisa" href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
+            <i class="fas fa-search"></i>
+        </a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" title="Acessar página inicial">início</a></li>
+                <li><a href="restaurantes.html" title="Acessar sessão restaurantes">sobre</a></li>
+                <li><a href="chef_a_domicilio.html" title=" Acessar sessão chef à domicílio">chef à domicílio</a></li>
+                <li><a href="sobre.html" title="Acessar sessão sobre página">sobre</a></li>
+                <li><a href="#" title="Acessar sessão fale conosco">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
+    </header>
+
+    <div class="banner_cadastro_usuario">
+        <h1>CADASTRO</h1>
+    </div>
+    <form action="#" method="GET" class="form_cadastro_usuario">
+        <div class="campo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nomejogador" id="nome">
+        </div>
+        <div class="campo campo2">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data" min="1970-01-01" max="2020-03-19">
+        </div>
+        <div class="telefone_celular">
+
+            <div class="campo">
+                <label for="telefone">Telefone </label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div class="campo">
+                <label for="celular">Senha</label>
+                <input type="text" name="celular" id="celular">
+            </div>
+            
+
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="sexo_cpf">
+
+            <div class="campo">
+                <label for="telefone">Sexo </label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div class="campo">
+                <label for="celular">CPF</label>
+                <input type="text" name="celular" id="celular">
+            </div>
+            
+
+        </div>
+
+        <div class="campo">
+            <label for="celular">Endereço</label>
+            <input type="text" name="celular" id="celular">
+        </div>
+        
+        <div class="formularios_usuarios">
+            <h2>Dados bancários</h2>
+        </div>
+        
+    </form>
+        
+        <form action="#" method="GET" class="formulario_bancários_usuários">
+            
+            <div class="telefone_celular">
+
+                <div class="campo">
+                    <label for="telefone"> N° do Cartão </label>
+                    <input type="text" name="telefone" id="telefone">
+                </div>
+                <div class="campo">
+                    <label for="celular">N° do Titular</label>
+                    <input type="text" name="celular" id="celular">
+                </div>
+                
+            </div>
+
+            <div class="telefone_celular">
+
+                <div class="campo">
+                    <label for="telefone"> Cód. de Segurança </label>
+                    <input type="text" name="telefone" id="telefone">
+                </div>
+                <div class="campo">
+                    <label for="celular">Validade</label>
+                    <input type="text" name="celular" id="celular">
+                </div>
+
+            </div>
+                
+            
+                    <div class="campo">
+                        <button type="submit" class="botao_usuario" >Cadastrar</button>
+                    </div>
+
+        </form> 
+
+
+
+
+
+
+
+    <footer>
+        <div class="baixo">
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="cadastroderestaurantes.html">Trabalhe Conosco</a></li>
+                    <div class="fale_conosco">
+                        <li>Fale Conosco:</li>
+                        <li>(11)9999-9999</li>
+                        <li>contato@nome.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="imagem-baixo">
+                <img src="img/logo-moblie.png" alt="Logo do site.">
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function btnMenu() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
