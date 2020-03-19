@@ -55,6 +55,7 @@ header img {
 }
 
 #menu {
+    z-index: 99;
     background-color: white;
     position: absolute;
     top: 80px;
@@ -141,13 +142,132 @@ footer .social-media i {
     color: var(--preto);
 }
 /* FIM DO FOOTER */
+
+/*Começo sessão restaurantes-home*/
+.restaurantes{
+    display: flex;
+    height: 210px;
+    width: 70%;
+    /*
+    box-sizing: border-box;
+    border-style: groove;
+    border-radius: 20px;
+    */
+    margin: auto;
+    margin-top: 19px;
+}
+
+.restaurantes img{
+        /* display: flex; */
+        width: 447px;
+        margin-left: -26px;
+        /* border-radius: 20px; */
+        /* border-style: double; */
+        /* object-fit: scale-down; */
+        /* border-color: #000; */
+}
+
+#inf_restaurantes{
+    position: absolute;
+    background-color: #EFB263;
+    display: flex;
+    height: 73px;
+    width: 79.8%;
+    margin-top: 121px;
+    margin-left: -20.1px;
+    border-style: groove;
+    border-color: #000;
+    border-radius: 20px;
+}
+
+#inf_restaurantes li{
+    color: black;
+    display: block;
+    margin-left: 28px;
+    padding: 0.1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#inf_restaurantes .estrela1{
+    color: #FFC107;
+        margin-left: 74px;
+        margin-top: 52px;
+        height: 15px;
+        position: absolute;
+        border-style: none;
+        display: flex;
+        width: 16px;
+}
+
+#inf_restaurantes .estrela2{
+    color: #FFC107;
+    margin-left: 90px;
+    margin-top: 52px;
+    height: 15px;
+    position: absolute;
+    border-style: none;
+    display: flex;
+    width: 16px;
+}
+
+#inf_restaurantes .estrela3{
+    color: #FFC107;
+    margin-left: 107px;
+    margin-top: 52px;
+    height: 15px;
+    position: absolute;
+    border-style: none;
+    display: flex;
+    width: 16px;
+}
+
+#inf_restaurantes p{
+    color: black;
+    margin-top: 19px;
+    margin-left: 6px;
+    display: flex;
+    font-size: 8px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.raio{
+    margin-top: 58px;
+    margin-left: -61px;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.seta_esquerda{
+    position: absolute;
+    display: flex;
+    height: 28px;
+    width: 21px;
+    margin-top: -119px;
+    margin-left: 19px;
+}
+
+.seta_direita{
+    position: absolute;
+    display: flex;
+    height: 28px;
+    width: 21px;
+    margin-top: -119px;
+    margin-left: 391px;
+}
+
 /* Começo sessão sobre-home */
 .containersobre{
     background-color: var(--areia);
-    width: 80%;
-    height: 155px;
+    width: 100%;
+    height: 180px;
     margin-bottom: 10px;
-    margin-left: 50px;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -160,7 +280,7 @@ footer .social-media i {
 }
 
 .contentsobre img{
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin-left: 10px;
     border-radius: 10px;
@@ -178,11 +298,13 @@ footer .social-media i {
 }
 
 .textosobre p{
-    font-size: 15px;
+    font-size: 10px;
     text-align: start;
 }
 
 .textosobre button{
+    margin-top: -10px;
+    margin-left: 80px;
     border-radius: 30px;
     font-size: 12px;
     padding: 1px;
@@ -195,15 +317,14 @@ footer .social-media i {
 /* fim sessão sobre-home */
 
 
-
-
+/*ínicio sessão chefs home*/
 
 .containerchefs{
     background-color: var(--areia);
     width: 80%;
     height: 180px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -223,7 +344,7 @@ footer .social-media i {
     align-items: center;
 }
 
-.conceituados h3 {
+.titulochefs h3{
     margin-left: 25px;
     font-weight: lighter;
 }
@@ -347,10 +468,10 @@ footer .social-media i {
 .containerparceiros {
     margin-top: 80px;
     width: 300px;
-    height: 500px;
+    height: 525px;
     border: solid 1px black;
     border-radius: 20px;
-    margin-left: 75px;
+    margin-left: 65px;
     margin-bottom: 50px;
 }
 
@@ -466,17 +587,58 @@ div.sobre{
     margin-left: 23px;
 }
 
-.criador_1 h3{
+.criador_1 ul{
     font-weight: lighter;
     margin-top: 7px;
     margin-left: 15px;
-    font-size: 11px;
+    font-size: 10px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
 }
 .criador_1 p{
     margin-top: 111px;
-    margin-left: -130px;
+    margin-left: -140px;
+    font-size: 7.5px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.criador_2{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 207px;
+    width: 85%;
+    margin-left: 36px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 50px;
+}
+.criador_2 img{
+    display: flex;
+    border-radius: 50em;
+    height: 138px;
+    margin-top: 28px;
+    margin-left: 23px;
+}
+
+.criador_2 ul{
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 10px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.criador_2 p{
+    margin-top: 111px;
+    margin-left: -140px;
     font-size: 7.5px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
@@ -556,16 +718,25 @@ div.sobre{
 }
 .criador_2 p{
     margin-top: 111px;
-    margin-left: -130px;
+    margin-left: -140px;
     font-size: 7.5px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-.responsividade{
-    display: flex;
-    margin-left: 36px;
+
+/* ínicio página CHEFS*/
+
+.Especialidades h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #737373;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 @media(min-width: 800px) {
     .mobile-restaurante{
@@ -703,26 +874,150 @@ div.sobre{
         margin-left: 260px;
     }
     /*fim página cadastro de parceiros*/
+    /* começo restaurantes-home*/
+    .restaurantes{
+        display: flex;
+        height: 210px;
+        width: 70%;
+        /*
+        box-sizing: border-box;
+        border-style: groove;
+        border-radius: 20px;
+        */
+        margin: auto;
+        margin-top: 19px;
+    }
+    
+    .restaurantes img{
+        display: flex;
+        width: 84%;
+        margin-left: 54px;
+        /* border-radius: 20px; */
+        /* border-style: double; */
+        /* object-fit: scale-down; */
+        /* border-color: #000; */
+        height: 238px;
+    }
+    
+    #inf_restaurantes{
+        position: absolute;
+    background-color: #EFB263;
+    display: flex;
+    height: 98px;
+    width: 55.8%;
+    margin-top: 144px;
+    margin-left: 62.9px;
+    border-style: groove;
+    border-color: #000;
+    border-radius: 20px;
+    }
+    
+    #inf_restaurantes li{
+        color: black;
+        display: block;
+        margin-left: 28px;
+        padding: 0.1px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        list-style: none;
+        margin-top: 5px;
+    }
+    
+    #inf_restaurantes .estrela1{
+        color: #FFC107;
+            margin-left: 74px;
+            margin-top: 52px;
+            height: 15px;
+            position: absolute;
+            border-style: none;
+            display: flex;
+            width: 16px;
+    }
+    
+    #inf_restaurantes .estrela2{
+        color: #FFC107;
+        margin-left: 90px;
+        margin-top: 52px;
+        height: 15px;
+        position: absolute;
+        border-style: none;
+        display: flex;
+        width: 16px;
+    }
+    
+    #inf_restaurantes .estrela3{
+        color: #FFC107;
+        margin-left: 107px;
+        margin-top: 52px;
+        height: 15px;
+        position: absolute;
+        border-style: none;
+        display: flex;
+        width: 16px;
+    }
+    
+    #inf_restaurantes p{
+        color: black;
+    margin-top: 25px;
+    margin-left: 12px;
+    display: flex;
+    font-size: 11px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    }
+    
+    .raio{
+        margin-top: 76px;
+        margin-left: -73px;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    
+    
+    
+    .seta_esquerda{
+        position: absolute;
+        display: flex;
+        height: 28px;
+        width: 21px;
+        margin-top: -119px;
+        margin-left: 157px;
+    }
+    
+    .seta_direita{
+        position: absolute;
+        display: flex;
+        height: 28px;
+        width: 21px;
+        margin-top: -119px;
+        margin-left: 640px;
+    }
 
+    /*fim restaurantes-home*/
     /* começo sobre-home */
     .containersobre{
+        height: 225px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 80px;
         margin-bottom: 30px;
     }
 
     .cardsobre h2{
         font-size: 20px;
+        margin-left: -10px;
     }
 
     .contentsobre p{
-        font-size: 19px;
+        text-align: justify;
+        font-size: 16px;
         font-weight: lighter;
     }
 
     .contentsobre img{
-        width: 150px;
-        height: 100px;
+        width: 214px;
+        height: 156px;
         margin-left: 32px;
         border-radius: 10px;
     }
@@ -731,7 +1026,7 @@ div.sobre{
         font-size: 15px;
         padding: 3px;
         margin-top: 10px;
-        margin-left: 90px;
+        margin-left: 245px;
     }
     .cardsobre strong p{
         display: none;
@@ -786,7 +1081,7 @@ div.sobre{
 
 
     .criador_1 img{
-        height: 104px;
+        height: 143px;
         margin-left: 58px;
     }
 
@@ -795,9 +1090,9 @@ div.sobre{
     }
 
     .criador_1 p{
-        margin-top: 134px;
-        font-size: 14.5px;
-        margin-left: -140px;
+        margin-top: 138px;
+        font-size: 11.5px;
+        margin-left: -193px;
     }
 
 
@@ -821,6 +1116,12 @@ div.sobre{
         margin-top: 134px;
         font-size: 14.5px;
         margin-left: -140px;
+    }
+
+    .criador_1 ul{
+    margin-top: 7px;
+    margin-left: 39px;
+    font-size:14px;
     }
 
     /* Fim responsividade sobre*/
@@ -865,7 +1166,7 @@ div.sobre{
         position: absolute;
         color: white;
         top: 29px;
-        left: -35px;
+        left: 38px;
         font-size: 25px;
         text-shadow: 0.5px 0.5px 20px black;     
     }
@@ -941,7 +1242,7 @@ div.sobre{
     .web-restaurante{
         display: flex;
         margin: 0 auto;
-        width: 1366px;
+        width: 1320px;
     }
     footer {
         height: 230px;
@@ -967,7 +1268,8 @@ div.sobre{
     .containerchefs {
         width: 70%;
         height: 350px;
-        margin-left: 200px;
+        margin-left: 220px;
+        margin-bottom: 40px;
     }
     .chefsrenomeados img {
         width: 200px;
@@ -977,8 +1279,123 @@ div.sobre{
         margin-left: 90px;
     }
     .titulochefs h3{
+        margin-left: -429px;
         font-size: 30px;
         text-align: center;
+    }
+
+    .Loguinho{
+        width: 27px;
+        height: 33px;
+        margin-left: 501px;
+        margin-top: -34px;
+    }
+    /* fimhome sessão chefs*/
+    /* home sessão restaurantes*/
+    .restaurantes{
+        display: flex;
+        height: 210px;
+        width: 70%;
+        margin: auto;
+        margin-top: 19px;
+    }
+    
+    .restaurantes img{
+        width: 700px;
+        margin-left: 152px;
+        height: 351px;
+    }
+    
+    #inf_restaurantes{
+        height: 142px;
+    width: 48.8%;
+    margin-top: 189px;
+    margin-left: 166.9px;
+
+    }
+    
+    #inf_restaurantes li{
+        margin-left: 28px;
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    
+    #inf_restaurantes .estrela1{
+        margin-left: 107px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
+    }
+    
+    #inf_restaurantes .estrela2{
+        margin-left: 139px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
+    }
+    
+    #inf_restaurantes .estrela3{
+        margin-left: 172px;
+        margin-top: 78px;
+        height: 32px;
+        width: 34px;
+    }
+    
+    #inf_restaurantes p{
+        margin-top: 19px;
+        margin-left: 17px;
+        font-size: 17px;
+        height: 50px;
+         text-align: justify;
+    }
+    
+    .raio{
+        margin-top: 117px;
+        margin-left: -115px;
+        font-size: 20px;
+    }
+    
+    
+    .seta_esquerda{   
+        height: 50px;
+        width: 50px;
+        margin-top: -87px;
+        margin-left: 302px;
+    }
+    
+    .seta_direita{
+        height: 50px;
+        width: 50px;
+        margin-top: -87px;
+        margin-left: 1062px;
+    }
+    /*fim home sessão restaurantes*/
+    /* Home sessão sobre*/
+    .contentsobre p {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+
+    .textosobre button {
+        font-size: 17px;
+         margin-top: 17px;
+        margin-left: 727px;
+    }
+
+    .containersobre {
+        height: 265px;
+        margin-top: 137px;
+    }
+
+    .contentsobre img {
+        width: 297px;
+        height: 194px;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+
+    .cardsobre h2 {
+        font-size: 25px;
     }
 
     /*página sobre*/
@@ -1003,8 +1420,8 @@ div.sobre{
     }
 
     .criador_1 img{
-        height: 97px;
-        margin-left: 58px;
+        height: 143px;
+     margin-left: 58px;
     }
 
     .criador_1 h3{
@@ -1012,17 +1429,22 @@ div.sobre{
     }
 
     .criador_1 p{
-        margin-top: 134px;
-        font-size: 14.5px;
-        margin-left: -145px;
+        margin-top: 130px;
+        font-size: 13.5px;
+        margin-left: -192px;
     }
 
     .criador_1{
-        height: 361px;
-        margin-left: 48px;
-        width: 16%;    
+        height: 221px;
+        margin-left: 237px;
+        width: 68%;
     }
 
+    .criador_1 ul{
+    margin-top: 7px;
+    margin-left: 39px;
+    font-size: 14px;
+    }
 
     .criador_2{
         height: 363px;
@@ -1051,6 +1473,10 @@ div.sobre{
         justify-content: space-between;
     }
 
+    .Especialidades h2{
+        font-size: 29px;
+        margin-left: 250px;
+    }
     .responsividade{
         width: 90%;
         display: flex;
@@ -1097,6 +1523,10 @@ div.sobre{
         font-size: 1.5em;
     }
     /* Fim página cadastro de usuário */
+
+    .fa-bars:before{
+        display: none;
+    }
  
 
 }
