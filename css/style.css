@@ -818,6 +818,8 @@ div.sobre{
 }
 
 @media(min-width: 1366px) {
+    
+    
     .ajustar-imagem img{
         height: 250px;
         width: 350px;
@@ -1052,6 +1054,29 @@ div.sobre{
     .containerparceiros{
     margin-left: 560px;
     }
+    /* Página cadastro de usuário */
+    .banner_cadastro_usuario{
+        height: 10em;
+        
+    }
+    .banner_cadastro_usuario h1{
+        font-size: 5em;
+    }
+    .form_cadastro_usuario{
+        font-size: 2em;
+    }
+    .formularios_usuarios h2{
+        font-size: 2em;
+        padding-left: 4em;
+    }
+    .formulario_bancários_usuários{
+        font-size: 2em;
+    }
+    .botao_usuario{
+        margin-left: 10em;
+        margin-top: 2em;
+    }
+    /* Fim página cadastro de usuário */
  
 
 }
