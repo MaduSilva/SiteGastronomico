@@ -754,6 +754,15 @@ div.sobre{
     .formulario_bancários_usuários{
         font-size: 1.5em;
     }
+    .form_cadastro_usuario input[type="text"]{
+        font-size: 1em;
+    }
+    .formulario_bancários_usuários input[type="text"]{
+        font-size: 1em;
+    }
+    .campo2{
+        font-size: 1em;
+    }
     .botao_usuario{
     padding-left: 2em;
     padding-right: 2em;
@@ -1055,9 +1064,11 @@ div.sobre{
     margin-left: 560px;
     }
     /* Página cadastro de usuário */
+    .fa-bars::before{
+        display: none;
+    }
     .banner_cadastro_usuario{
-        height: 10em;
-        
+        height: 10em;   
     }
     .banner_cadastro_usuario h1{
         font-size: 5em;
@@ -1075,6 +1086,15 @@ div.sobre{
     .botao_usuario{
         margin-left: 10em;
         margin-top: 2em;
+    }
+    .form_cadastro_usuario input[type="text"]{
+        font-size: 1.5em;
+    }
+    .formulario_bancários_usuários input[type="text"]{
+        font-size: 1.5em;
+    }
+    .campo2{
+        font-size: 1.5em;
     }
     /* Fim página cadastro de usuário */
  
