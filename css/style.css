@@ -408,7 +408,7 @@ footer .social-media i {
     border-radius: initial;
     border:none;
     border-bottom: solid 1px black;
-
+    margin-bottom: 1em;
 }
 
 .telefone_celular{
@@ -434,6 +434,7 @@ footer .social-media i {
     text-transform: uppercase;
     margin-left: 100px;
     margin-top: 15px;
+    margin-bottom: 1em;
 }
 .formulario_bancários_usuários{
     margin-bottom: 20px;
@@ -444,14 +445,22 @@ footer .social-media i {
     border-radius: initial;
     border:none;
     border-bottom: solid 1px black;
+    margin-bottom: 1em;
+}
+.campo{
+    margin-left: 0.5em;
+}
+.campo2{
+    margin-bottom: 1em;
+}
+.botao_usuario{
+    height: 2em;
+    font-size: 1.5em;
+    margin-left: 6em;
+    margin-top: 1em;
 }
 
-.usuario_cadastre{
-    margin-left: 20px;
-    margin-top: 20px;
-    border: solid 1px black;
-    max-width: 50%;
-}
+
 /* fim páfina cadastro de usuário */
 /*Página de cadastro de parceiros*/
 

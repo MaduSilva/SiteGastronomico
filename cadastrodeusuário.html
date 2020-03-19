@@ -34,64 +34,100 @@
         <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
     </header>
 
-
-    <div class="containerparceiros">
-
-        <h1>Cadastro de Parceiro</h1>
-        <form action="" method="post" enctype="multipart/form-data">
-
-            <section class="botao">
-                <button class="botao">
-                    <a href="cadastrodechefs.html">Chefs</a>
-                </button>
-
-                <button class="botao">
-                    <a href="CadastroDeRestaurantes.html">Restaurantes</a>
-                </button>
-            </section>
-
-            <div class="camposdetexto">
-                <div>
-                    <label for="">Nome do Estabelecimento:</label>
-                    <input name="nome" required="required" placeholder="Digite o nome do restaurante" type="text">
-                </div>
-
-                <div>
-                    <label for="">Endereço:</label>
-                    <input name="endereco" required="required" placeholder="Digite o endereço do restaurante"
-                        type="text">
-                </div>
-
-                <div>
-                    <label for="">Tipo de Cozinha:</label>
-                    <input name="cozinha" required="required" placeholder="Digite o tipo de cozinha" type="text">
-                </div>
-
-                <div>
-                    <label for="">Rede Social:</label>
-                    <input name="rede" required="required" placeholder="Digite a rede social do restaurante"
-                        type="text">
-                </div>
-
-                <div>
-                    <label for="">Foto do Estabelecimento:</label>
-                    <input required="required" name="foto" type="file">
-                </div>
-            </div>
-            <div>
-                <label for="termos">
-                    <input name="termosdeuso" id="termos" type="checkbox">
-                    Li e aceito os termos de uso do site</label>
-            </div>
-
-            <div class="enviar">
-                <button name="enviar" value="1" type="submit">Cadastrar</button>
-            </div>
-
-
-        </form>
-
+    <div class="banner_cadastro_usuario">
+        <h1>CADASTRO</h1>
     </div>
+    <form action="#" method="GET" class="form_cadastro_usuario">
+        <div class="campo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nomejogador" id="nome">
+        </div>
+        <div class="campo campo2">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data" min="1970-01-01" max="2020-03-19">
+        </div>
+        <div class="telefone_celular">
+
+            <div class="campo">
+                <label for="telefone">Telefone </label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div class="campo">
+                <label for="celular">Senha</label>
+                <input type="text" name="celular" id="celular">
+            </div>
+            
+
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="sexo_cpf">
+
+            <div class="campo">
+                <label for="telefone">Sexo </label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div class="campo">
+                <label for="celular">CPF</label>
+                <input type="text" name="celular" id="celular">
+            </div>
+            
+
+        </div>
+
+        <div class="campo">
+            <label for="celular">Endereço</label>
+            <input type="text" name="celular" id="celular">
+        </div>
+        
+        <div class="formularios_usuarios">
+            <h2>Dados bancários</h2>
+        </div>
+        
+    </form>
+        
+        <form action="#" method="GET" class="formulario_bancários_usuários">
+            
+            <div class="telefone_celular">
+
+                <div class="campo">
+                    <label for="telefone"> N° do Cartão </label>
+                    <input type="text" name="telefone" id="telefone">
+                </div>
+                <div class="campo">
+                    <label for="celular">N° do Titular</label>
+                    <input type="text" name="celular" id="celular">
+                </div>
+                
+            </div>
+
+            <div class="telefone_celular">
+
+                <div class="campo">
+                    <label for="telefone"> Cód. de Segurança </label>
+                    <input type="text" name="telefone" id="telefone">
+                </div>
+                <div class="campo">
+                    <label for="celular">Validade</label>
+                    <input type="text" name="celular" id="celular">
+                </div>
+
+            </div>
+                
+            
+                    <div class="campo">
+                        <button type="submit" class="botao_usuario" >Cadastrar</button>
+                    </div>
+
+        </form> 
+
+
+
+
+
+
 
     <footer>
         <div class="baixo">
@@ -130,6 +166,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>
