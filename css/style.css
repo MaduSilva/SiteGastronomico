@@ -1072,7 +1072,7 @@ div.sobre{
 
 
     .criador_1 img{
-        height: 104px;
+        height: 143px;
         margin-left: 58px;
     }
 
@@ -1081,9 +1081,9 @@ div.sobre{
     }
 
     .criador_1 p{
-        margin-top: 134px;
-        font-size: 14.5px;
-        margin-left: -140px;
+        margin-top: 138px;
+        font-size: 11.5px;
+        margin-left: -193px;
     }
 
 
@@ -1107,6 +1107,12 @@ div.sobre{
         margin-top: 134px;
         font-size: 14.5px;
         margin-left: -140px;
+    }
+
+    .criador_1 ul{
+    margin-top: 7px;
+    margin-left: 39px;
+    font-size:14px;
     }
 
     /* Fim responsividade sobre*/
@@ -1151,7 +1157,7 @@ div.sobre{
         position: absolute;
         color: white;
         top: 29px;
-        left: -35px;
+        left: 38px;
         font-size: 25px;
         text-shadow: 0.5px 0.5px 20px black;     
     }
@@ -1227,7 +1233,7 @@ div.sobre{
     .web-restaurante{
         display: flex;
         margin: 0 auto;
-        width: 1366px;
+        width: 1320px;
     }
     footer {
         height: 230px;
@@ -1405,8 +1411,8 @@ div.sobre{
     }
 
     .criador_1 img{
-        height: 97px;
-        margin-left: 58px;
+        height: 143px;
+     margin-left: 58px;
     }
 
     .criador_1 h3{
@@ -1414,17 +1420,22 @@ div.sobre{
     }
 
     .criador_1 p{
-        margin-top: 134px;
-        font-size: 14.5px;
-        margin-left: -145px;
+        margin-top: 130px;
+        font-size: 13.5px;
+        margin-left: -192px;
     }
 
     .criador_1{
-        height: 361px;
-        margin-left: 48px;
-        width: 16%;    
+        height: 221px;
+        margin-left: 237px;
+        width: 68%;
     }
 
+    .criador_1 ul{
+    margin-top: 7px;
+    margin-left: 39px;
+    font-size: 14px;
+    }
 
     .criador_2{
         height: 363px;
@@ -1453,6 +1464,10 @@ div.sobre{
         justify-content: space-between;
     }
 
+    .Especialidades h2{
+        font-size: 29px;
+        margin-left: 250px;
+    }
     .responsividade{
         width: 90%;
         display: flex;
@@ -1488,6 +1503,10 @@ div.sobre{
         margin-top: 2em;
     }
     /* Fim página cadastro de usuário */
+
+    .fa-bars:before{
+        display: none;
+    }
  
 
 }
