@@ -20,7 +20,7 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html" title="Acessar página inicial">Início</a></li>
+                    <li><a href="index.html" title="Acessar página inicial">Home</a></li>
                     <li><a href="restaurantes.html" title="Acessar sessão restaurantes">Restaurantes</a></li>
                     <li><a href="chefs.html" title=" Acessar sessão chef à domicílio">Chef à Domicílio</a></li>
                     <li><a href="sobre.html" title="Acessar sessão sobre página">Sobre</a></li>
@@ -31,16 +31,17 @@
             </nav>
 
             <a href="index.html" title="acessar a home">
-                <img src="img/logo-moblie.png" alt="Logo do Gastro">
+                <img class="loguinho" src="img/logo-moblie.png" alt="Logo do Gastro">
             </a>
-            <a href="#" class="btn circle pesquisa" title="clique para pesquisar no site">
-                <i class="fas fa-search"></i>
-            </a>
+
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>  <img src="img/search3.png" id="btnBusca" alt="Buscar"/>
+               
+              </div>
 
             <img class="icone_perfil" src="img/imagem_icone_perfil.png" alt="Perfil">
         </div>
     </header>
-
 
     <main class="container-restaurante">
         <div class="mobile-restaurante">
@@ -336,15 +337,6 @@
     </footer>
 
     <script>
-        function btnMenu() {
-            var menu = document.getElementById("menu");
-
-            if (menu.style.display == "none") {
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
-        }
         function MouseMove1(){
             var x = document.getElementById("texto_aparece1");
             x.style.display = "block";
