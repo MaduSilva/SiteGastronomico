@@ -18,31 +18,95 @@ body {
     /*tirar parte branca lateral do mobile*/
 }
 
+aside{
+    display: none;
+}
+
+
 /* NAV */
-a {
-    color: #000000;
+
+
+#bt_menu{
+    width: 100px;
+    display: none;
+}
+
+#bt_menu:checked ~ .menu{
+    margin-left: -110px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+    }
+
+.menu{
+    margin-top: 100px;
+    width: 100px;
+     margin-left: -73px; 
+    /* transition: all .4s;*/
+    height: 50px;
+     background-color: var(--areia);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    }
+    
+    .menu ul{ 
+        list-style: none;
+        position: relative;
+    }
+    
+    .menu ul li{
+    width: 150px;
+    float: left;
+    }
+    
+    .menu a{
+    width: 100px;
+    padding: 15px;
+    display: block;
     text-decoration: none;
-    font-size: 1.4em;
+    text-align: center;
+    background-color: var(--areia);
+    color: black;
+    }
+
+    .menu a:hover{
+        background-color: coral;
+        color: black;
+        }
+
+        label[for="bt_menu"]{
+        
+            background-color: #222;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            margin-top: 100px;
+            z-index: 99;
+            }
+
+
+.web-restaurante h2{
+    padding: 25px 0px 0px 10px;
+    font-size: 15px;
+    color: gray;
+}
+.web-restaurante h3{
+    display: none;
+}
+.web-restaurante h4{
+    display: none;
 }
 
-.btn {
-    padding-left: 45px;
-}
 
-.circle {
-    border-radius: 50%;
+.menuzin{
+    margin-bottom: 100px;
+    margin-right: 20;    
 }
-
-.rounded {
-    border-radius: 0.7em;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-header {
+.topo {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -50,30 +114,20 @@ header {
     background-color: var(--areia);
 }
 
-header img {
+
+.topo img {
     margin-top: 20px;
-}
-
-#menu {
     z-index: 99;
-    background-color: white;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    padding: 2em 3em;
-    display: none;
-}
-
-#menu li, #menu a {
-    list-style: none;
-    padding: 17px 12em 2px 0;
-    width: 100%;
 }
 
 .icone_perfil {
     height: 100px;
+    z-index: -2;
     width: 100px;
 }
+
+*/
+
 /* FIM NAV */
 /* COMEÇO DO FOOTER */
 .web-restaurante, .tablet-restaurante{
@@ -898,18 +952,11 @@ div.sobre{
     }
     /*nav*/
     
-    .pesquisa {
-        margin-left: 400px;
+    .menu{
+        margin-left: -225px;
     }
-    .containerchefs {
-        width: 50%;
-        height: 200px;
-        margin-left: 200px;
-    }
-    .chefsrenomeados img {
-        margin-top: 10px;
-        margin-left: 25px;
-    }
+
+
     /*fim nav*/
     /*página cadastro de parceiro*/
     .containerparceiros {
@@ -930,14 +977,17 @@ div.sobre{
         margin-top: 19px;
     }
     
+    /*chefs home*/
+    .nomes{
+        margin-left: 10px;
+    }
+    .chefsrenomeados img{
+        margin-left: 90px;
+    }
     .restaurantes img{
         display: flex;
         width: 84%;
         margin-left: 54px;
-        /* border-radius: 20px; */
-        /* border-style: double; */
-        /* object-fit: scale-down; */
-        /* border-color: #000; */
         height: 238px;
     }
     
@@ -1211,7 +1261,7 @@ div.sobre{
     
     .CardsCriadores {
         margin-left: 47px;
-        display: flex;
+   
         margin-right: 1px;
     
     }
@@ -1228,6 +1278,18 @@ div.sobre{
 
   
     /* Fim responsividade sobre*/
+}
+
+.web-restaurante h3{
+    display: flex;
+}
+.web-restaurante h4{
+    display: flex;
+}
+.web-restaurante h2{
+    padding: 25px 0px 0px 10px;
+    font-size: 20px;
+    color: white;
 }
 
 @media(min-width: 1366px) {
@@ -1551,7 +1613,7 @@ div.sobre{
 
     .CardsCriadores {
         margin-left: 19px;
-        display: flex;
+        
         margin-right: 87px;
     }
 
@@ -1645,11 +1707,30 @@ div.sobre{
             margin-left: 116px;
         }  
 
-    
-
-    label[for="menu"]{
-        display: flex;
+    .menu ul{
+     width: 100%;
+     display: flex;
+     text-align: center;
         justify-content: space-around;
     }
+
+    aside{
+        display: flex;
+    }
+
+    .web-restaurante h3{
+        display: flex;
+    }
+    .web-restaurante h4{
+        display: flex;
+    }
+
+    .web-restaurante h2{
+        padding: 25px 0px 0px 10px;
+        font-size: 15px;
+        color: gray;
+    }
+    
+
 
     }
